@@ -778,9 +778,9 @@ instance ITRI_DEX_STRG_01(C_ITEM)
 	on_unequip = unequip_itri_dex_strg_01;
 	description = "Кольцо власти";
 	text[2] = NAME_BONUS_STR;
-	count[2] = 4;
+	count[2] = RI_DEXSTRG_STRG;
 	text[3] = NAME_BONUS_DEX;
-	count[3] = 4;
+	count[3] = RI_DEXSTRG_DEX;
 	text[5] = NAME_VALUE;
 	count[5] = value;
 	inv_zbias = INVCAM_ENTF_RING_STANDARD;
