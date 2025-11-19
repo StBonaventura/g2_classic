@@ -94,6 +94,15 @@ const int AIV_MM_ORCSITEND = 41;
 const int ONLYROUTINE = -1;
 const int AIV_MM_SHRINKSTATE = 42;
 const int AIV_MM_REAL_ID = 43;
+
+const int REAL_STRENGTH = 81;
+const int REAL_DEXTERITY = 82;
+const int REAL_MANA_MAX = 83;
+const int REAL_TALENT_1H = 84;
+const int REAL_TALENT_2H = 85;
+const int REAL_TALENT_BOW = 86;
+const int REAL_TALENT_CROSSBOW = 87;
+
 const int ID_MEATBUG = 1;
 const int ID_SHEEP = 2;
 const int ID_GOBBO_GREEN = 3;

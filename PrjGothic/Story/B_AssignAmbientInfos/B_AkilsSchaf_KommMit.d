@@ -5,7 +5,7 @@ instance DIA_AKILSSCHAF_KOMMMIT(C_INFO)
 	nr = 1;
 	condition = dia_akilsschaf_kommmit_condition;
 	information = dia_akilsschaf_kommmit_info;
-	description = "Пойдем со мной!";
+	description = "Иди за мной!";
 };
 
 

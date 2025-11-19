@@ -406,7 +406,7 @@ instance DIA_BIFF_STAY_AWAYFROMOC(C_INFO)
 	information = dia_biff_stay_awayfromoc_info;
 	nr = 3;
 	permanent = TRUE;
-	description = "(опять взять с собой Биффа)";
+	description = "Иди за мной!";
 };
 
 
@@ -484,6 +484,7 @@ func void dia_biff_biffloswerden_info()
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	DJG_BIFF_HALBEHALBE = FALSE;
 	DJG_BIFFPARTY = FALSE;
+	DJG_BIFF_STAY = FALSE;
 	DJG_BIFFPARTY_NOMORE = DJG_BIFFPARTY_NOMORE + 1;
 };
 
