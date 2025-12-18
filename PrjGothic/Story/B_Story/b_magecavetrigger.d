@@ -10,5 +10,18 @@ func void b_magecavetrigger()
 			AI_ContinueRoutine(agon);
 		};
 	};
+	if(MIS_SCHNITZELJAGD == LOG_RUNNING)
+	{
+		if(IGARAZ_WAIT == FALSE)
+		{
+			if(!Npc_IsDead(igaraz))
+			{
+				AI_Teleport(igaraz,"NW_TROLLAREA_PATH_66");
+				Npc_ExchangeRoutine(igaraz,"CONTESTWAIT");
+				AI_ContinueRoutine(igaraz);
+				IGARAZ_WAIT = TRUE;
+			};
+		};
+	};
 };
 

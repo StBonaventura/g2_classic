@@ -338,7 +338,6 @@ func void dia_igaraz_pruefung_info()
 	AI_StopProcessInfos(self);
 	if(IGARAZ_WAIT == FALSE)
 	{
-		AI_StopProcessInfos(self);
 		Npc_ExchangeRoutine(self,"CONTESTWAIT");
 		IGARAZ_WAIT = TRUE;
 	};
@@ -358,7 +357,7 @@ instance DIA_IGARAZ_STEIN(C_INFO)
 
 func int dia_igaraz_stein_condition()
 {
-	if((Npc_GetDistToWP(self,"NW_TAVERNE_TROLLAREA_66") <= 3500) && (other.guild == GIL_NOV) && (Npc_HasItems(other,itmi_runeblank) >= 1))
+	if((Npc_GetDistToWP(self,"NW_TROLLAREA_PATH_66") <= 3500) && (other.guild == GIL_NOV) && (Npc_HasItems(other,itmi_runeblank) >= 1))
 	{
 		return TRUE;
 	};

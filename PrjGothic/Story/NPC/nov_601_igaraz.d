@@ -36,7 +36,7 @@ func void rtn_contest_601()
 
 func void rtn_contestwait_601()
 {
-	ta_stand_armscrossed(8,0,23,4,"NW_TAVERNE_TROLLAREA_66");
-	ta_stand_armscrossed(23,4,8,0,"NW_TAVERNE_TROLLAREA_66");
+	ta_stand_armscrossed(8,0,23,4,"NW_TROLLAREA_PATH_66");
+	ta_stand_armscrossed(23,4,8,0,"NW_TROLLAREA_PATH_66");
 };
 

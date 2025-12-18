@@ -336,7 +336,7 @@ func void b_enter_newworld_kapitel_4()
 			Wld_InsertNpc(orcelite_antipaladin,"XARDAS");
 			Wld_InsertNpc(orcelite_antipaladin,"NW_BIGFARM_FARM4_PATH_04");
 			Wld_InsertNpc(orcwarrior_roam,"FP_PICK_NW_FARM4_FIELD_01");
-			Wld_InsertNpc(orcwarrior_roam,"FP_PICK_NW_FARM4_FIELD_04");
+			Wld_InsertNpc(orcwarrior_roam,"FP_PICK_NW_FARM4_FIELD_07");
 			Wld_InsertNpc(orcwarrior_roam,"FP_PICK_NW_FARM4_FIELD_05");
 			Wld_InsertNpc(orcwarrior_roam,"FP_PICK_NW_FARM4_FIELD_02");
 			Wld_InsertNpc(orcwarrior_roam,"FP_PICK_NW_FARM4_FIELD_06");

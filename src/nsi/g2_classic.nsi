@@ -8,8 +8,8 @@
 ##            Основное           ##
 ###################################
 
-!define MOD_VERSION "1.6"
-!define MOD_DATE "8.1"
+!define MOD_VERSION "1.7"
+!define MOD_DATE "12.18"
 !define MOD_NAME "g2_classic"
 !define MOD_NAME_RU "Готика 2: Классическая"
 !define MOD_DETAILED_VERSION "${MOD_VERSION}.${MOD_DATE}"
@@ -33,7 +33,7 @@ VIAddVersionKey "FileDescription" "${MOD_NAME_RU}"
 VIAddVersionKey "ProductVersion" "${MOD_VERSION}"
 
 Unicode true
-SetCompressor lzma
+SetCompressor /SOLID /FINAL lzma
 
 ###################################
 ##      Настройки интерфейса     ##
@@ -161,8 +161,6 @@ SectionEnd
 ###################################
 
 Function .onInit
-	SetSilent normal
-	!insertmacro MUI_LANGDLL_DISPLAY
 	ReadRegStr $INSTDIR HKCU "Software\${MOD_NAME}" "InstallLocation"
 	StrCmp $INSTDIR "" "" InstallPathIsFound
 	StrCpy $INSTDIR "$PROGRAMFILES\Akella Games\Gothic II"
