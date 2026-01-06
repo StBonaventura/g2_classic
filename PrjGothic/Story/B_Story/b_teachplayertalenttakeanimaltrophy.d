@@ -10,8 +10,6 @@ func int b_teachplayertalenttakeanimaltrophy(var C_NPC slf,var C_NPC oth,var int
 		return FALSE;
 	};
 	oth.lp = oth.lp - kosten;
-	Log_CreateTopic(TOPIC_TALENTANIMALTROPHY,LOG_NOTE);
-	b_logentry(TOPIC_TALENTANIMALTROPHY,"Теперь я могу:");
 	if(trophy == TROPHY_TEETH)
 	{
 		PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_TEETH] = TRUE;

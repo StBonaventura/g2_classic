@@ -2318,5 +2318,14 @@ func void init_newworld()
 		b_kapitelwechsel(5,NEWWORLD_ZEN);
 		B_CHAPTER5_ONETIME = TRUE;
 	};
+	Log_CreateTopic(TOPIC_TALENTANIMALTROPHY,LOG_NOTE);
+	b_logentry(TOPIC_TALENTANIMALTROPHY,"Я могу:");
+	b_logentry(TOPIC_TALENTANIMALTROPHY,"...вынимать клыки из мертвых животных.");
+	b_logentry(TOPIC_TALENTANIMALTROPHY,"...вырезать рог у мертвых мракорисов.");
+	b_logentry(TOPIC_TALENTANIMALTROPHY,"...вырезать рога у мертвых драконих снепперов.");
+	b_logentry(TOPIC_TALENTANIMALTROPHY,"...вынимать сердца из мертвых големов и демонов.");
+	b_logentry(TOPIC_TALENTANIMALTROPHY,"...вынимать язык у мертвых огненных ящеров.");
+	b_logentry(TOPIC_TALENTANIMALTROPHY,"...вырезать крылья у мертвых кровавых мух.");
+	b_logentry(TOPIC_TALENTANIMALTROPHY,"...снимать панцири с мертвых краулеров.");
 };
 
