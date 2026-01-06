@@ -12,13 +12,13 @@ const int MANA_EXTRAKT = 75;
 const int VALUE_MANAELIXIER = 60;
 const int MANA_ELIXIER = 100;
 const int VALUE_STRELIXIER = 800;
-const int STR_ELIXIER = 5;
+const int STR_ELIXIER = 8;
 const int VALUE_DEXELIXIER = 800;
-const int DEX_ELIXIER = 5;
+const int DEX_ELIXIER = 8;
 const int VALUE_HPMAXELIXIER = 1500;
-const int HPMAX_ELIXIER = 15;
+const int HPMAX_ELIXIER = 150;
 const int VALUE_MANAMAXELIXIER = 1500;
-const int MANAMAX_ELIXIER = 10;
+const int MANAMAX_ELIXIER = 15;
 const int VALUE_MEGADRINK = 1800;
 const int STRORDEX_MEGADRINK = 15;
 const int VALUE_SPEED = 200;
@@ -44,7 +44,7 @@ instance ITPO_MANA_01(C_ITEM)
 
 func void useitpo_mana_01()
 {
-	Npc_ChangeAttribute(self,ATR_MANA,MANA_ESSENZ);
+	Npc_ChangeAttribute(self,ATR_MANA,MANA_ESSENZ*self.attribute[ATR_MANA_MAX]/100);
 };
 
 
@@ -68,7 +68,7 @@ instance ITPO_MANA_02(C_ITEM)
 
 func void useitpo_mana_02()
 {
-	Npc_ChangeAttribute(self,ATR_MANA,MANA_EXTRAKT);
+	Npc_ChangeAttribute(self,ATR_MANA,MANA_EXTRAKT*self.attribute[ATR_MANA_MAX]/100);
 };
 
 
@@ -92,7 +92,7 @@ instance ITPO_MANA_03(C_ITEM)
 
 func void useitpo_mana_03()
 {
-	Npc_ChangeAttribute(self,ATR_MANA,MANA_ELIXIER);
+	Npc_ChangeAttribute(self,ATR_MANA,MANA_ELIXIER*self.attribute[ATR_MANA_MAX]/100);
 };
 
 
@@ -116,7 +116,7 @@ instance ITPO_HEALTH_01(C_ITEM)
 
 func void useitpo_health_01()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_ESSENZ);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_ESSENZ*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -140,7 +140,7 @@ instance ITPO_HEALTH_02(C_ITEM)
 
 func void useitpo_health_02()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_EXTRAKT);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_EXTRAKT*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -164,7 +164,7 @@ instance ITPO_HEALTH_03(C_ITEM)
 
 func void useitpo_health_03()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_ELIXIER);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_ELIXIER*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -316,7 +316,7 @@ func void useitpo_megadrink()
 	{
 		b_raiseattribute(self,ATR_STRENGTH,STRORDEX_MEGADRINK);
 	};
-//	Npc_ChangeAttribute(self,ATR_MANA,-ATR_MANA);
+//	Npc_ChangeAttribute(self,ATR_MANA,-ATR_MANA*self.attribute[ATR_MANA_MAX]/100);
 	self.attribute[ATR_MANA] = 0;
 	Snd_Play("DEM_Warn");
 };

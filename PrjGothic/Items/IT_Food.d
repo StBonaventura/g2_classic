@@ -59,7 +59,7 @@ instance ITFO_APPLE(C_ITEM)
 
 func void use_apple()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_APPLE);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_APPLE*self.attribute[ATR_HITPOINTS_MAX]/100);
 	if(Npc_IsPlayer(self))
 	{
 		APPLE_BONUS = APPLE_BONUS + 1;
@@ -101,7 +101,7 @@ instance ITFO_CHEESE(C_ITEM)
 
 func void use_cheese()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_CHEESE);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_CHEESE*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -125,7 +125,7 @@ instance ITFO_BACON(C_ITEM)
 
 func void use_bacon()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_BACON);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_BACON*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -149,7 +149,7 @@ instance ITFO_BREAD(C_ITEM)
 
 func void use_bread()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_BREAD);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_BREAD*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -173,7 +173,7 @@ instance ITFO_FISH(C_ITEM)
 
 func void use_fish()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_FISH);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_FISH*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -197,7 +197,7 @@ instance ITFOMUTTONRAW(C_ITEM)
 
 func void use_rawmeat()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_RAWMEAT);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_RAWMEAT*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -221,7 +221,7 @@ instance ITFOMUTTON(C_ITEM)
 
 func void use_meat()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_MEAT);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_MEAT*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -245,7 +245,7 @@ instance ITFO_STEW(C_ITEM)
 
 func void use_stew()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_STEW);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_STEW*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -272,7 +272,7 @@ instance ITFO_XPSTEW(C_ITEM)
 func void use_xpstew()
 {
 	b_raiseattribute(self,ATR_STRENGTH,STR_STEW);
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_STEW);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_STEW*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -302,7 +302,7 @@ func void use_coragonsbeer()
 	var string concatText;
 	b_raiseattribute(self,ATR_HITPOINTS_MAX,HP_BEER);
 	Npc_ChangeAttribute(self,ATR_MANA_MAX,MANA_BEER);
-	Npc_ChangeAttribute(self,ATR_MANA,MANA_BEER);
+	Npc_ChangeAttribute(self,ATR_MANA,MANA_BEER*self.attribute[ATR_MANA_MAX]/100);
 	concatText = ConcatStrings(PRINT_LearnMANA_MAX,IntToString(MANA_BEER));
 	PrintScreen(concatText,-1,53,FONT_Screen,2);
 };
@@ -328,7 +328,7 @@ instance ITFO_FISHSOUP(C_ITEM)
 
 func void use_fishsoup()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_FISHSOUP);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_FISHSOUP*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -352,7 +352,7 @@ instance ITFO_SAUSAGE(C_ITEM)
 
 func void use_sausage()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_SAUSAGE);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_SAUSAGE*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -376,7 +376,7 @@ instance ITFO_HONEY(C_ITEM)
 
 func void use_honey()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_HONEY);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_HONEY*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -400,7 +400,7 @@ instance ITFO_WATER(C_ITEM)
 
 func void use_water()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_WATER);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_WATER*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -427,8 +427,8 @@ instance ITFO_BEER(C_ITEM)
 
 func void use_beer()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_BEER);
-	Npc_ChangeAttribute(self,ATR_MANA,MANA_BEER);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_BEER*self.attribute[ATR_HITPOINTS_MAX]/100);
+	Npc_ChangeAttribute(self,ATR_MANA,MANA_BEER*self.attribute[ATR_MANA_MAX]/100);
 };
 
 
@@ -454,8 +454,8 @@ instance ITFO_BOOZE(C_ITEM)
 
 func void use_booze()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_BOOZE);
-	Npc_ChangeAttribute(self,ATR_MANA,MANA_BOOZE);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_BOOZE*self.attribute[ATR_HITPOINTS_MAX]/100);
+	Npc_ChangeAttribute(self,ATR_MANA,MANA_BOOZE*self.attribute[ATR_MANA_MAX]/100);
 };
 
 
@@ -481,8 +481,8 @@ instance ITFO_WINE(C_ITEM)
 
 func void use_wine()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_WINE);
-	Npc_ChangeAttribute(self,ATR_MANA,MANA_WINE);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_WINE*self.attribute[ATR_HITPOINTS_MAX]/100);
+	Npc_ChangeAttribute(self,ATR_MANA,MANA_WINE*self.attribute[ATR_MANA_MAX]/100);
 };
 
 
@@ -508,7 +508,7 @@ instance ITFO_MILK(C_ITEM)
 
 func void use_milk()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_MILK);
-	Npc_ChangeAttribute(self,ATR_MANA,MANA_MILK);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_MILK*self.attribute[ATR_HITPOINTS_MAX]/100);
+	Npc_ChangeAttribute(self,ATR_MANA,MANA_MILK*self.attribute[ATR_MANA_MAX]/100);
 };
 

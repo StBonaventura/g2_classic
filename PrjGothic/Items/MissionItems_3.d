@@ -372,7 +372,7 @@ instance ITPO_HEALHILDA_MIS(C_ITEM)
 
 func void use_healhilda()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_ESSENZ);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_ESSENZ*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -610,7 +610,7 @@ instance ITPO_HEALOBSESSION_MIS(C_ITEM)
 
 func void use_healobsession()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_ESSENZ);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_ESSENZ*self.attribute[ATR_HITPOINTS_MAX]/100);
 	SC_OBSESSIONTIMES = SC_OBSESSIONTIMES + 1;
 	b_clearscobsession(self);
 	Wld_PlayEffect("spellFX_LIGHTSTAR_VIOLET",hero,hero,0,0,0,FALSE);

@@ -383,7 +383,7 @@ instance ITFO_SMELLYFISH(C_ITEM)
 
 func void use_smellyfish()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_HERING);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_HERING*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -722,7 +722,7 @@ instance ITFO_SCHAFSWURST(C_ITEM)
 
 func void use_schafswurst()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_SAUSAGE);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_SAUSAGE*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 

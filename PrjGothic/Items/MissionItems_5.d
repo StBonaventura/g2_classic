@@ -424,7 +424,7 @@ func void useitpo_potionofdeath()
 		Wld_PlayEffect("VOB_MAGICBURN",hero,hero,0,0,0,FALSE);
 		b_say(self,self,"$Dead");
 		AI_StopFX(self,"VOB_MAGICBURN");
-		Npc_ChangeAttribute(self,ATR_HITPOINTS,-self.attribute[ATR_HITPOINTS_MAX]);
+		Npc_ChangeAttribute(self,ATR_HITPOINTS,-self.attribute[ATR_HITPOINTS_MAX]*self.attribute[ATR_HITPOINTS_MAX]/100);
 		Npc_StopAni(self,"S_FIRE_VICTIM");
 	};
 };
@@ -519,6 +519,6 @@ instance ITPO_HEALRANDOLPH_MIS(C_ITEM)
 
 func void use_healrandolph()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_ESSENZ);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_ESSENZ*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 

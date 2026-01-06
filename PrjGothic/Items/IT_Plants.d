@@ -65,7 +65,7 @@ instance ITPL_BEET(C_ITEM)
 
 func void use_beet()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_BEET);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_BEET*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -114,7 +114,7 @@ instance ITPL_MANA_HERB_01(C_ITEM)
 
 func void use_mana_herb_01()
 {
-	Npc_ChangeAttribute(self,ATR_MANA,MANA_MANA_HERB_01);
+	Npc_ChangeAttribute(self,ATR_MANA,MANA_MANA_HERB_01*self.attribute[ATR_MANA_MAX]/100);
 };
 
 
@@ -138,7 +138,7 @@ instance ITPL_MANA_HERB_02(C_ITEM)
 
 func void use_mana_herb_02()
 {
-	Npc_ChangeAttribute(self,ATR_MANA,MANA_MANA_HERB_02);
+	Npc_ChangeAttribute(self,ATR_MANA,MANA_MANA_HERB_02*self.attribute[ATR_MANA_MAX]/100);
 };
 
 
@@ -162,7 +162,7 @@ instance ITPL_MANA_HERB_03(C_ITEM)
 
 func void use_mana_herb_03()
 {
-	Npc_ChangeAttribute(self,ATR_MANA,MANA_MANA_HERB_03);
+	Npc_ChangeAttribute(self,ATR_MANA,MANA_MANA_HERB_03*self.attribute[ATR_MANA_MAX]/100);
 };
 
 
@@ -186,7 +186,7 @@ instance ITPL_HEALTH_HERB_01(C_ITEM)
 
 func void use_health_herb_01()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_HEALTH_HERB_01);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_HEALTH_HERB_01*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -210,7 +210,7 @@ instance ITPL_HEALTH_HERB_02(C_ITEM)
 
 func void use_health_herb_02()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_HEALTH_HERB_02);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_HEALTH_HERB_02*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -234,7 +234,7 @@ instance ITPL_HEALTH_HERB_03(C_ITEM)
 
 func void use_health_herb_03()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_HEALTH_HERB_03);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_HEALTH_HERB_03*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -333,7 +333,7 @@ instance ITPL_MUSHROOM_01(C_ITEM)
 
 func void use_mushroom_01()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_MUSHROOM_01);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_MUSHROOM_01*self.attribute[ATR_HITPOINTS_MAX]/100);
 	if(Npc_IsPlayer(self))
 	{
 		DUNKELPILZ_BONUS = DUNKELPILZ_BONUS + 1;
@@ -366,7 +366,7 @@ instance ITPL_MUSHROOM_02(C_ITEM)
 
 func void use_mushroom_02()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_MUSHROOM_02);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_MUSHROOM_02*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -392,8 +392,8 @@ instance ITPL_BLUEPLANT(C_ITEM)
 
 func void use_blueplant()
 {
-	Npc_ChangeAttribute(self,ATR_MANA,MANA_BLUEPLANT);
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_BLUEPLANT);
+	Npc_ChangeAttribute(self,ATR_MANA,MANA_BLUEPLANT*self.attribute[ATR_MANA_MAX]/100);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_BLUEPLANT*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -417,7 +417,7 @@ instance ITPL_FORESTBERRY(C_ITEM)
 
 func void use_forestberry()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_FORESTBERRY);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_FORESTBERRY*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -441,7 +441,7 @@ instance ITPL_PLANEBERRY(C_ITEM)
 
 func void use_planeberry()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_PLANEBERRY);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_PLANEBERRY*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -465,7 +465,7 @@ instance ITPL_TEMP_HERB(C_ITEM)
 
 func void use_temp_herb()
 {
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_TEMP_HERB);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_TEMP_HERB*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
 
@@ -490,6 +490,6 @@ instance ITPL_PERM_HERB(C_ITEM)
 func void use_perm_herb()
 {
 	TotalPermEaten += 1;
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_PERM_HERB);
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_PERM_HERB*self.attribute[ATR_HITPOINTS_MAX]/100);
 };
 
