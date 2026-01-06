@@ -151,7 +151,7 @@ func void dia_orlan_ruestung_info()
 	AI_Output(self,other,"DIA_Orlan_RUESTUNG_05_01");	//У меня есть очень хороший экземпляр, я уверен, это заинтересует тебя.
 	Info_ClearChoices(dia_orlan_ruestung);
 	Info_AddChoice(dia_orlan_ruestung,DIALOG_BACK,dia_orlan_ruestung_back);
-	Info_AddChoice(dia_orlan_ruestung,"Кожаные доспехи. Защита: оружие 25, стрелы 20, огонь 5 (250 золота)",dia_orlan_ruestung_buy);
+	Info_AddChoice(dia_orlan_ruestung,"Кожаные доспехи. Защита: оружие 30, стрелы 30, огонь 5 (250 золота)",dia_orlan_ruestung_buy);
 };
 
 func void dia_orlan_ruestung_buy()
