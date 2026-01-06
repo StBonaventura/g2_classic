@@ -1,5 +1,5 @@
 
-const int SPL_COST_DEATHBOLT = 5;
+const int SPL_COST_DEATHBOLT = 1;
 const int SPL_DAMAGE_DEATHBOLT = 120;
 
 instance SPELL_DEATHBOLT(C_SPELL_PROTO)

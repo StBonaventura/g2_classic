@@ -1,5 +1,5 @@
 
-const int SPL_COST_FEAR = 15;
+const int SPL_COST_FEAR = 3;
 const int SPL_TIME_FEAR = 5;
 
 instance SPELL_FEAR(C_SPELL_PROTO)

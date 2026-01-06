@@ -1,5 +1,5 @@
 
-const int SPL_COST_FIRESTORM = 125;
+const int SPL_COST_FIRESTORM = 25;
 const int SPL_DAMAGE_FIRESTORM = 100;
 const int SPL_PYRO_DAMAGE_PER_SEC = 20;
 

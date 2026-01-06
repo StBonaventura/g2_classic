@@ -1,5 +1,5 @@
 
-const int SPL_COST_TELEPORT = 5;
+const int SPL_COST_TELEPORT = 1;
 
 func void B_TeleportBySpell(var int level,var string waypoint)
 {

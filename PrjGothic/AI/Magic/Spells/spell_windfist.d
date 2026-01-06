@@ -1,5 +1,5 @@
 
-const int SPL_COST_WINDFIST = 50;
+const int SPL_COST_WINDFIST = 10;
 const int SPL_DAMAGE_WINDFIST = 20;
 
 instance SPELL_WINDFIST(C_SPELL_PROTO)

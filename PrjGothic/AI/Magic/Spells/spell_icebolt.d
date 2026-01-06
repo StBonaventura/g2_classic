@@ -1,5 +1,5 @@
 
-const int SPL_COST_ICEBOLT = 7;
+const int SPL_COST_ICEBOLT = 1;
 const int SPL_DAMAGE_ICEBOLT = 40;
 
 instance SPELL_ICEBOLT(C_SPELL_PROTO)

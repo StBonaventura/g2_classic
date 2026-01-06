@@ -1,5 +1,5 @@
 
-const int SPL_COST_CHARM = 10;
+const int SPL_COST_CHARM = 2;
 const int SPL_DAMAGE_CHARM = 0;
 
 instance SPELL_CHARM(C_SPELL_PROTO)

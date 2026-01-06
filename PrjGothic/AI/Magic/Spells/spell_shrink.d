@@ -1,5 +1,5 @@
 
-const int SPL_COST_SHRINK = 100;
+const int SPL_COST_SHRINK = 20;
 
 instance SPELL_SHRINK(C_SPELL_PROTO)
 {

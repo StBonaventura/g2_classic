@@ -1,5 +1,5 @@
 
-const int SPL_COST_CHARGEZAP = 60;
+const int SPL_COST_CHARGEZAP = 12;
 const int SPL_DAMAGE_CHARGEZAP = 60;
 
 instance SPELL_CHARGEZAP(C_SPELL_PROTO)

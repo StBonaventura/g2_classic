@@ -4,7 +4,7 @@ const string FONT_SCREENSMALL = "FONT_OLD_10_WHITE.TGA";
 const string FONT_BOOK = "FONT_10_BOOK.TGA";
 const string FONT_BOOKHEADLINE = "FONT_20_BOOK.TGA";
 
-const int SPL_COST_SCROLL = 5;
+const int SPL_COST_SCROLL = 1;
 const int SPL_CHARGE_FRAMES = 32;
 const int ATR_HITPOINTS = 0;
 const int ATR_HITPOINTS_MAX = 1;

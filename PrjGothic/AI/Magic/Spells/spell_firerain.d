@@ -1,5 +1,5 @@
 
-const int SPL_COST_FIRERAIN = 60;
+const int SPL_COST_FIRERAIN = 12;
 const int SPL_DAMAGE_FIRERAIN = 300;
 
 instance SPELL_FIRERAIN(C_SPELL_PROTO)

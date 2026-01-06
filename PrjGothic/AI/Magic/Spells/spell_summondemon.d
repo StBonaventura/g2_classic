@@ -1,5 +1,5 @@
 
-const int SPL_COST_SUMMONDEMON = 50;
+const int SPL_COST_SUMMONDEMON = 10;
 
 instance SPELL_SUMMONDEMON(C_SPELL_PROTO)
 {

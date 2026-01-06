@@ -1,5 +1,5 @@
 
-const int SPL_COST_ZAP = 6;
+const int SPL_COST_ZAP = 1;
 const int SPL_DAMAGE_ZAP = 30;
 
 instance SPELL_ZAP(C_SPELL_PROTO)

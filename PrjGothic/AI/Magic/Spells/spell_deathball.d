@@ -1,5 +1,5 @@
 
-const int SPL_COST_DEATHBALL = 5;
+const int SPL_COST_DEATHBALL = 1;
 const int SPL_DAMAGE_DEATHBALL = 175;
 
 instance SPELL_DEATHBALL(C_SPELL_PROTO)

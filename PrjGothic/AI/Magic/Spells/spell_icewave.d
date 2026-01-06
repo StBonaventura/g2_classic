@@ -1,5 +1,5 @@
 
-const int SPL_COST_ICEWAVE = 60;
+const int SPL_COST_ICEWAVE = 12;
 
 instance SPELL_ICEWAVE(C_SPELL_PROTO)
 {

@@ -1,5 +1,5 @@
 
-const int SPL_COST_SUMMONWOLF = 20;
+const int SPL_COST_SUMMONWOLF = 4;
 
 instance SPELL_SUMMONWOLF(C_SPELL_PROTO)
 {

@@ -1,5 +1,5 @@
 
-const int SPL_COST_FIREBOLT = 5;
+const int SPL_COST_FIREBOLT = 1;
 const int SPL_DAMAGE_FIREBOLT = 30;
 
 instance SPELL_FIREBOLT(C_SPELL_PROTO)

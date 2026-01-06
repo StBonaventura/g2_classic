@@ -1,5 +1,5 @@
 
-const int SPL_COST_ICECUBE = 20;
+const int SPL_COST_ICECUBE = 4;
 const int SPL_FREEZE_DAMAGE = 2;
 const int SPL_TIME_FREEZE = 19;
 

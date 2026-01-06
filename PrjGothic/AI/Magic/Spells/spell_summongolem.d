@@ -1,5 +1,5 @@
 
-const int SPL_COST_SUMMONGOLEM = 40;
+const int SPL_COST_SUMMONGOLEM = 8;
 
 instance SPELL_SUMMONGOLEM(C_SPELL_PROTO)
 {

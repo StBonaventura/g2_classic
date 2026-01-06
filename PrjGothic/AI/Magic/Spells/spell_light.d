@@ -1,5 +1,5 @@
 
-const int SPL_COST_PALLIGHT = 5;
+const int SPL_COST_PALLIGHT = 1;
 const int SPL_COST_LIGHT = 1;
 const int SPL_DURATION_PALLIGHT = 5;
 const int SPL_DURATION_LIGHT = 5;

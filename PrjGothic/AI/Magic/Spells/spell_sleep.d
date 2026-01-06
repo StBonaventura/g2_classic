@@ -1,5 +1,5 @@
 
-const int SPL_COST_SLEEP = 10;
+const int SPL_COST_SLEEP = 2;
 const int SPL_TIME_SLEEP = 30;
 
 instance SPELL_SLEEP(C_SPELL_PROTO)
