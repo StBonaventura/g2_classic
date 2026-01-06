@@ -154,18 +154,18 @@ const int CONDITION_HOLYHAMMER = 10;
 const int RANGE_HOLYHAMMER = 100;
 const int VALUE_HOLYHAMMER = 0;
 
-const int DAMAGE_ORKAXT_01 = 30;
-const int CONDITION_ORKAXT_01 = 30;
+const int DAMAGE_ORKAXT_01 = 60;
+const int CONDITION_ORKAXT_01 = 60;
 const int RANGE_ORKAXT_01 = 100;
 const int VALUE_ORKAXT_01 = 50;
 
-const int DAMAGE_ORKAXT_02 = 50;
-const int CONDITION_ORKAXT_02 = 50;
+const int DAMAGE_ORKAXT_02 = 70;
+const int CONDITION_ORKAXT_02 = 70;
 const int RANGE_ORKAXT_02 = 110;
 const int VALUE_ORKAXT_02 = 75;
 
-const int DAMAGE_ORKAXT_03 = 70;
-const int CONDITION_ORKAXT_03 = 70;
+const int DAMAGE_ORKAXT_03 = 80;
+const int CONDITION_ORKAXT_03 = 80;
 const int RANGE_ORKAXT_03 = 110;
 const int VALUE_ORKAXT_03 = 100;
 
@@ -445,17 +445,17 @@ const int RANGE_SPECIAL_2H_4 = 140;
 const int VALUE_SPECIAL_2H_4 = 2400;
 
 const int DAMAGE_BLESSED_1H_1 = 50;
-const int CONDITION_BLESSED_1H_1 = 30;
+const int CONDITION_BLESSED_1H_1 = 34;
 const int RANGE_BLESSED_1H_1 = 100;
 const int VALUE_BLESSED_1H_1 = 2000;
 
 const int DAMAGE_BLESSED_1H_2 = 70;
-const int CONDITION_BLESSED_1H_2 = 30;
+const int CONDITION_BLESSED_1H_2 = 34;
 const int RANGE_BLESSED_1H_2 = 100;
 const int VALUE_BLESSED_1H_2 = 3000;
 
 const int DAMAGE_BLESSED_1H_3 = 90;
-const int CONDITION_BLESSED_1H_3 = 30;
+const int CONDITION_BLESSED_1H_3 = 34;
 const int RANGE_BLESSED_1H_3 = 100;
 const int VALUE_BLESSED_1H_3 = 4000;
 
