@@ -7,7 +7,7 @@ instance SPELL_PYROKINESIS(C_SPELL_PROTO)
 {
 	time_per_mana = 120;
 	damage_per_level = SPL_DAMAGE_FIRESTORM;
-	damagetype = DAM_MAGIC;
+	damagetype = DAM_FIRE;
 };
 
 

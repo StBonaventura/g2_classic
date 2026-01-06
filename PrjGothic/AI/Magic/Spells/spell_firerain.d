@@ -6,7 +6,7 @@ instance SPELL_FIRERAIN(C_SPELL_PROTO)
 {
 	time_per_mana = 0;
 	damage_per_level = SPL_DAMAGE_FIRERAIN;
-	damagetype = DAM_MAGIC;
+	damagetype = DAM_FIRE;
 	targetcollectalgo = TARGET_COLLECT_NONE;
 };
 

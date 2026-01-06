@@ -1,12 +1,12 @@
 
 const int SPL_COST_FIREBOLT = 1;
-const int SPL_DAMAGE_FIREBOLT = 30;
+const int SPL_DAMAGE_FIREBOLT = 50;
 
 instance SPELL_FIREBOLT(C_SPELL_PROTO)
 {
 	time_per_mana = 0;
 	damage_per_level = SPL_DAMAGE_FIREBOLT;
-	damagetype = DAM_MAGIC;
+	damagetype = DAM_FIRE;
 };
 
 

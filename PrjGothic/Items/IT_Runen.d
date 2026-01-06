@@ -396,7 +396,7 @@ instance ITRU_FIREBOLT(C_ITEM)
 	count[0] = mag_circle;
 	text[1] = NAME_MANAKOSTEN;
 	count[1] = SPL_COST_FIREBOLT;
-	text[2] = NAME_DAM_MAGIC;
+	text[2] = NAME_DAM_FIRE;
 	count[2] = SPL_DAMAGE_FIREBOLT;
 	text[5] = NAME_VALUE;
 	count[5] = value;
@@ -479,7 +479,7 @@ instance ITRU_INSTANTFIREBALL(C_ITEM)
 	count[0] = mag_circle;
 	text[1] = NAME_MANAKOSTEN;
 	count[1] = SPL_COST_INSTANTFIREBALL;
-	text[2] = NAME_DAM_MAGIC;
+	text[2] = NAME_DAM_FIRE;
 	count[2] = SPL_DAMAGE_INSTANTFIREBALL;
 	text[5] = NAME_VALUE;
 	count[5] = value;
@@ -630,9 +630,9 @@ instance ITRU_CHARGEFIREBALL(C_ITEM)
 	count[1] = SPL_COST_CHARGEFIREBALL / 5;
 	text[2] = NAME_MANAKOSTENMAX;
 	count[2] = SPL_COST_CHARGEFIREBALL;
-	text[3] = "Урон магией (мин.):";
+	text[3] = "Урон огнем (мин.):";
 	count[3] = SPL_DAMAGE_CHARGEFIREBALL;
-	text[4] = "Урон магией (макс.):";
+	text[4] = "Урон огнем (макс.):";
 	count[4] = SPL_DAMAGE_CHARGEFIREBALL * 4;
 	text[5] = NAME_VALUE;
 	count[5] = value;
@@ -779,9 +779,9 @@ instance ITRU_PYROKINESIS(C_ITEM)
 	count[1] = SPL_COST_FIRESTORM / 5;
 	text[2] = NAME_MANAKOSTENMAX;
 	count[2] = SPL_COST_FIRESTORM;
-	text[3] = "Урон магией (мин.):";
+	text[3] = "Урон огнем (мин.):";
 	count[3] = SPL_DAMAGE_FIRESTORM;
-	text[4] = "Урон магией (макс.):";
+	text[4] = "Урон огнем (макс.):";
 	count[4] = SPL_DAMAGE_FIRESTORM * 4;
 	text[5] = NAME_VALUE;
 	count[5] = value;
@@ -802,7 +802,7 @@ instance ITRU_FIRESTORM(C_ITEM)
 	count[0] = mag_circle;
 	text[1] = NAME_MANAKOSTEN;
 	count[1] = SPL_COST_INSTANTFIRESTORM;
-	text[2] = NAME_DAM_MAGIC;
+	text[2] = NAME_DAM_FIRE;
 	count[2] = SPL_DAMAGE_INSTANTFIRESTORM;
 	text[5] = NAME_VALUE;
 	count[5] = value;
@@ -884,7 +884,7 @@ instance ITRU_FIRERAIN(C_ITEM)
 	count[0] = mag_circle;
 	text[1] = NAME_MANAKOSTEN;
 	count[1] = SPL_COST_FIRERAIN;
-	text[2] = NAME_DAM_MAGIC;
+	text[2] = NAME_DAM_FIRE;
 	count[2] = SPL_DAMAGE_FIRERAIN;
 	text[5] = NAME_VALUE;
 	count[5] = value;

@@ -1,12 +1,12 @@
 
 const int SPL_COST_INSTANTFIREBALL = 2;
-const int SPL_DAMAGE_INSTANTFIREBALL = 60;
+const int SPL_DAMAGE_INSTANTFIREBALL = 100;
 
 instance SPELL_INSTANTFIREBALL(C_SPELL_PROTO)
 {
 	time_per_mana = 0;
 	damage_per_level = SPL_DAMAGE_INSTANTFIREBALL;
-	damagetype = DAM_MAGIC;
+	damagetype = DAM_FIRE;
 };
 
 
