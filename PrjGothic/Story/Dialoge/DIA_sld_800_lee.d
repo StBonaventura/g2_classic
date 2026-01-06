@@ -554,8 +554,9 @@ func void dia_lee_joinnow_info()
 			AI_Output(self,other,"DIA_Lee_JoinNOW_04_14");	//Вот, возьми для начала эти доспехи!
 			Npc_SetTrueGuild(other,GIL_SLD);
 			other.guild = GIL_SLD;
-			CreateInvItems(other,itar_sld_l,1);
-			AI_EquipArmor(other,itar_sld_l);
+			CreateInvItems(other,itar_sld_m,1);
+			AI_EquipArmor(other,itar_sld_m);
+			LEE_GIVE_SLD_M = TRUE;
 			Snd_Play("LEVELUP");
 			NOV_AUFNAHME = LOG_OBSOLETE;
 			SLD_AUFNAHME = LOG_SUCCESS;
@@ -1015,7 +1016,7 @@ instance DIA_LEE_ARMORH(C_INFO)
 
 func int dia_lee_armorh_condition()
 {
-	if((KAPITEL == 3) && ((other.guild == GIL_SLD) || (other.guild == GIL_DJG)))
+	if((other.guild == GIL_SLD) || (other.guild == GIL_DJG))
 	{
 		return TRUE;
 	};
@@ -1037,7 +1038,7 @@ instance DIA_LEE_BUYARMORH(C_INFO)
 	condition = dia_lee_buyarmorh_condition;
 	information = dia_lee_buyarmorh_info;
 	permanent = TRUE;
-	description = "Купить тяжелые доспехи наемника. Защита: оружие 60, стрелы 60. Цена: 1000 золота";
+	description = "Купить тяжелые доспехи наемника. Защита: оружие 70, стрелы 70. Цена: 1000 золота";
 };
 
 
