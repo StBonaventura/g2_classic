@@ -12,11 +12,11 @@ prototype MST_DEFAULT_ORCWARRIOR(C_NPC)
 	attribute[ATR_HITPOINTS] = 200;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
-	protection[PROT_BLUNT] = 60;
-	protection[PROT_EDGE] = 60;
-	protection[PROT_POINT] = 60;
+	protection[PROT_BLUNT] = 30;
+	protection[PROT_EDGE] = 30;
+	protection[PROT_POINT] = 30;
 	protection[PROT_FIRE] = 0;
-	protection[PROT_FLY] = 60;
+	protection[PROT_FLY] = 30;
 	protection[PROT_MAGIC] = 0;
 	hitchance[NPC_TALENT_1H] = 60;
 	hitchance[NPC_TALENT_2H] = 60;

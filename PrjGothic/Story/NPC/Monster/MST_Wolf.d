@@ -5,10 +5,10 @@ prototype MST_DEFAULT_WOLF(C_NPC)
 	guild = GIL_WOLF;
 	aivar[AIV_MM_REAL_ID] = ID_WOLF;
 	level = 6;
-	attribute[ATR_STRENGTH] = 20;
-	attribute[ATR_DEXTERITY] = 20;
-	attribute[ATR_HITPOINTS_MAX] = 40;
-	attribute[ATR_HITPOINTS] = 40;
+	attribute[ATR_STRENGTH] = 30;
+	attribute[ATR_DEXTERITY] = 30;
+	attribute[ATR_HITPOINTS_MAX] = 60;
+	attribute[ATR_HITPOINTS] = 60;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 10;
@@ -71,12 +71,6 @@ instance YWOLF(MST_DEFAULT_WOLF)
 {
 	level = 3;
 	name[0] = "Молодой волк";
-	attribute[ATR_STRENGTH] = 5;
-	attribute[ATR_DEXTERITY] = 5;
-	attribute[ATR_HITPOINTS_MAX] = 20;
-	attribute[ATR_HITPOINTS] = 20;
-	attribute[ATR_MANA_MAX] = 0;
-	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 0;
 	protection[PROT_EDGE] = 0;
 	protection[PROT_POINT] = 0;
@@ -90,14 +84,8 @@ instance YWOLF(MST_DEFAULT_WOLF)
 
 instance PEPES_YWOLF1(MST_DEFAULT_WOLF)
 {
-	name[0] = "Молодой волк";
 	level = 3;
-	attribute[ATR_STRENGTH] = 10;
-	attribute[ATR_DEXTERITY] = 10;
-	attribute[ATR_HITPOINTS_MAX] = 40;
-	attribute[ATR_HITPOINTS] = 40;
-	attribute[ATR_MANA_MAX] = 0;
-	attribute[ATR_MANA] = 0;
+	name[0] = "Молодой волк";
 	protection[PROT_BLUNT] = 5;
 	protection[PROT_EDGE] = 5;
 	protection[PROT_POINT] = 5;
@@ -112,12 +100,6 @@ instance PEPES_YWOLF2(MST_DEFAULT_WOLF)
 {
 	level = 3;
 	name[0] = "Молодой волк";
-	attribute[ATR_STRENGTH] = 10;
-	attribute[ATR_DEXTERITY] = 10;
-	attribute[ATR_HITPOINTS_MAX] = 40;
-	attribute[ATR_HITPOINTS] = 40;
-	attribute[ATR_MANA_MAX] = 0;
-	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 5;
 	protection[PROT_EDGE] = 5;
 	protection[PROT_POINT] = 5;
@@ -132,12 +114,6 @@ instance PEPES_YWOLF3(MST_DEFAULT_WOLF)
 {
 	level = 3;
 	name[0] = "Молодой волк";
-	attribute[ATR_STRENGTH] = 10;
-	attribute[ATR_DEXTERITY] = 10;
-	attribute[ATR_HITPOINTS_MAX] = 40;
-	attribute[ATR_HITPOINTS] = 40;
-	attribute[ATR_MANA_MAX] = 0;
-	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 5;
 	protection[PROT_EDGE] = 5;
 	protection[PROT_POINT] = 5;
@@ -152,12 +128,6 @@ instance PEPES_YWOLF4(MST_DEFAULT_WOLF)
 {
 	level = 3;
 	name[0] = "Молодой волк";
-	attribute[ATR_STRENGTH] = 10;
-	attribute[ATR_DEXTERITY] = 10;
-	attribute[ATR_HITPOINTS_MAX] = 40;
-	attribute[ATR_HITPOINTS] = 40;
-	attribute[ATR_MANA_MAX] = 0;
-	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 5;
 	protection[PROT_EDGE] = 5;
 	protection[PROT_POINT] = 5;

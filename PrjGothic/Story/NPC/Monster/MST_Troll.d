@@ -4,11 +4,11 @@ prototype MST_DEFAULT_TROLL(C_NPC)
 	name[0] = "Тролль";
 	guild = GIL_TROLL;
 	aivar[AIV_MM_REAL_ID] = ID_TROLL;
-	level = 50;
-	attribute[ATR_STRENGTH] = 50;
-	attribute[ATR_DEXTERITY] = 50;
-	attribute[ATR_HITPOINTS_MAX] = 400;
-	attribute[ATR_HITPOINTS] = 400;
+	level = 250;
+	attribute[ATR_STRENGTH] = 250;
+	attribute[ATR_DEXTERITY] = 250;
+	attribute[ATR_HITPOINTS_MAX] = 2000;
+	attribute[ATR_HITPOINTS] = 2000;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 50;

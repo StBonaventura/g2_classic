@@ -4,18 +4,18 @@ prototype MST_DEFAULT_BLOODFLY(C_NPC)
 	name[0] = "Кровавая муха";
 	guild = GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID] = ID_BLOODFLY;
-	level = 6;
-	attribute[ATR_STRENGTH] = 20;
-	attribute[ATR_DEXTERITY] = 20;
-	attribute[ATR_HITPOINTS_MAX] = 40;
-	attribute[ATR_HITPOINTS] = 40;
+	level = 7;
+	attribute[ATR_STRENGTH] = 30;
+	attribute[ATR_DEXTERITY] = 30;
+	attribute[ATR_HITPOINTS_MAX] = 50;
+	attribute[ATR_HITPOINTS] = 50;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
-	protection[PROT_BLUNT] = 10;
-	protection[PROT_EDGE] = 10;
-	protection[PROT_POINT] = 10;
+	protection[PROT_BLUNT] = 15;
+	protection[PROT_EDGE] = 15;
+	protection[PROT_POINT] = 15;
 	protection[PROT_FIRE] = 0;
-	protection[PROT_FLY] = 10;
+	protection[PROT_FLY] = 15;
 	protection[PROT_MAGIC] = 0;
 	damagetype = DAM_EDGE;
 	fight_tactic = FAI_BLOODFLY;
@@ -45,13 +45,7 @@ instance BLOODFLY(MST_DEFAULT_BLOODFLY)
 instance YBLOODFLY(MST_DEFAULT_BLOODFLY)
 {
 	name[0] = "Малая кровавая муха";
-	level = 3;
-	attribute[ATR_STRENGTH] = 5;
-	attribute[ATR_DEXTERITY] = 5;
-	attribute[ATR_HITPOINTS_MAX] = 20;
-	attribute[ATR_HITPOINTS] = 20;
-	attribute[ATR_MANA_MAX] = 0;
-	attribute[ATR_MANA] = 0;
+	level = 5;
 	protection[PROT_BLUNT] = 0;
 	protection[PROT_EDGE] = 0;
 	protection[PROT_POINT] = 0;

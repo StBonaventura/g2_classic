@@ -11,10 +11,10 @@ prototype MST_DEFAULT_SKELETON(C_NPC)
 	attribute[ATR_HITPOINTS] = 180;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
-	protection[PROT_BLUNT] = 30;
+	protection[PROT_BLUNT] = 0;
 	protection[PROT_EDGE] = 30;
 	protection[PROT_POINT] = 1000;
-	protection[PROT_FIRE] = 30;
+	protection[PROT_FIRE] = 0;
 	protection[PROT_FLY] = 0;
 	protection[PROT_MAGIC] = 30;
 	damagetype = DAM_EDGE;
@@ -68,12 +68,6 @@ instance SUMMONED_SKELETON(MST_DEFAULT_SKELETON)
 	attribute[ATR_HITPOINTS] = 120;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
-	protection[PROT_BLUNT] = 20;
-	protection[PROT_EDGE] = 20;
-	protection[PROT_POINT] = 1000;
-	protection[PROT_FIRE] = 0;
-	protection[PROT_FLY] = 0;
-	protection[PROT_MAGIC] = 20;
 	fight_tactic = FAI_HUMAN_NORMAL;
 	b_setvisuals_lesser_skeleton();
 	aivar[AIV_PARTYMEMBER] = TRUE;
@@ -93,12 +87,6 @@ instance LESSER_SKELETON(MST_DEFAULT_SKELETON)
 	attribute[ATR_HITPOINTS] = 120;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
-	protection[PROT_BLUNT] = 20;
-	protection[PROT_EDGE] = 20;
-	protection[PROT_POINT] = 1000;
-	protection[PROT_FIRE] = 0;
-	protection[PROT_FLY] = 0;
-	protection[PROT_MAGIC] = 20;
 	fight_tactic = FAI_HUMAN_NORMAL;
 	b_setvisuals_lesser_skeleton();
 	EquipItem(self,itmw_1h_misc_sword);

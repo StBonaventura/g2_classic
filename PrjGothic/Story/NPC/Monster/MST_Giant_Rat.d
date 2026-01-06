@@ -4,9 +4,9 @@ prototype MST_DEFAULT_GIANT_RAT(C_NPC)
 	name[0] = "Гигантская крыса";
 	guild = GIL_GIANT_RAT;
 	aivar[AIV_MM_REAL_ID] = ID_GIANT_RAT;
-	level = 4;
-	attribute[ATR_STRENGTH] = 15;
-	attribute[ATR_DEXTERITY] = 15;
+	level = 2;
+	attribute[ATR_STRENGTH] = 10;
+	attribute[ATR_DEXTERITY] = 10;
 	attribute[ATR_HITPOINTS_MAX] = 30;
 	attribute[ATR_HITPOINTS] = 30;
 	attribute[ATR_MANA_MAX] = 0;
@@ -45,7 +45,7 @@ instance GIANT_RAT(MST_DEFAULT_GIANT_RAT)
 instance YGIANT_RAT(MST_DEFAULT_GIANT_RAT)
 {
 	name[0] = "Молодая гигантская крыса";
-	level = 2;
+	level = 1;
 	attribute[ATR_STRENGTH] = 5;
 	attribute[ATR_DEXTERITY] = 5;
 	attribute[ATR_HITPOINTS_MAX] = 20;

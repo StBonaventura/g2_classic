@@ -9,14 +9,14 @@ prototype MST_DEFAULT_DRAGON_FIRE(C_NPC)
 //	attribute[ATR_STRENGTH] = 140;
 	attribute[ATR_STRENGTH] = 13;
 	attribute[ATR_DEXTERITY] = 100;
-	attribute[ATR_HITPOINTS_MAX] = 700;
-	attribute[ATR_HITPOINTS] = 700;
+	attribute[ATR_HITPOINTS_MAX] = 1400;
+	attribute[ATR_HITPOINTS] = 1400;
 	attribute[ATR_MANA_MAX] = 1000;
 	attribute[ATR_MANA] = 1000;
 	protection[PROT_BLUNT] = 100;
 	protection[PROT_EDGE] = 100;
 	protection[PROT_POINT] = 100;
-	protection[PROT_FIRE] = 50;
+	protection[PROT_FIRE] = IMMUNE;
 	protection[PROT_FLY] = IMMUNE;
 	protection[PROT_MAGIC] = 50;
 	damagetype = DAM_FLY;

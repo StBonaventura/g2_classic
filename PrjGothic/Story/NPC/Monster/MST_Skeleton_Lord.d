@@ -12,11 +12,11 @@ prototype MST_SKELETON_LORD(C_NPC)
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 0;
-	protection[PROT_EDGE] = 0;
+	protection[PROT_EDGE] = 30;
 	protection[PROT_POINT] = 1000;
 	protection[PROT_FIRE] = 0;
 	protection[PROT_FLY] = 0;
-	protection[PROT_MAGIC] = 0;
+	protection[PROT_MAGIC] = 30;
 	damagetype = DAM_EDGE;
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_zweihaender2);
@@ -63,12 +63,6 @@ instance SKELETON_LORD_ARCHOL(MST_SKELETON_LORD)
 	attribute[ATR_HITPOINTS] = 400;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
-	protection[PROT_BLUNT] = 10;
-	protection[PROT_EDGE] = 20;
-	protection[PROT_POINT] = 1000;
-	protection[PROT_FIRE] = 10;
-	protection[PROT_FLY] = 10;
-	protection[PROT_MAGIC] = 10;
 	b_setvisuals_skeleton_lord();
 	CreateInvItems(self,itmi_gold,650);
 	CreateInvItems(self,itke_evt_undead_01,1);

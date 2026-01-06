@@ -4,11 +4,11 @@ prototype MST_DEFAULT_TROLL_BLACK(C_NPC)
 	name[0] = "Черный тролль";
 	guild = GIL_TROLL;
 	aivar[AIV_MM_REAL_ID] = ID_TROLL_BLACK;
-	level = 100;
-	attribute[ATR_STRENGTH] = 100;
-	attribute[ATR_DEXTERITY] = 100;
-	attribute[ATR_HITPOINTS_MAX] = 1000;
-	attribute[ATR_HITPOINTS] = 1000;
+	level = 500;
+	attribute[ATR_STRENGTH] = 500;
+	attribute[ATR_DEXTERITY] = 500;
+	attribute[ATR_HITPOINTS_MAX] = 5000;
+	attribute[ATR_HITPOINTS] = 5000;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 75;

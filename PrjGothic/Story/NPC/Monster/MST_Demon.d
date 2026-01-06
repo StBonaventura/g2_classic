@@ -5,10 +5,10 @@ prototype MST_DEFAULT_DEMON(C_NPC)
 	guild = GIL_DEMON;
 	aivar[AIV_MM_REAL_ID] = ID_DEMON;
 	level = 60;
-	attribute[ATR_STRENGTH] = 200;
-	attribute[ATR_DEXTERITY] = 200;
-	attribute[ATR_HITPOINTS_MAX] = 400;
-	attribute[ATR_HITPOINTS] = 400;
+	attribute[ATR_STRENGTH] = 60;
+	attribute[ATR_DEXTERITY] = 60;
+	attribute[ATR_HITPOINTS_MAX] = 300;
+	attribute[ATR_HITPOINTS] = 300;
 	attribute[ATR_MANA_MAX] = 100;
 	attribute[ATR_MANA] = 100;
 	protection[PROT_BLUNT] = 100;
@@ -17,7 +17,7 @@ prototype MST_DEFAULT_DEMON(C_NPC)
 	protection[PROT_FIRE] = 50;
 	protection[PROT_FLY] = 100;
 	protection[PROT_MAGIC] = 50;
-	damagetype = DAM_EDGE;
+	damagetype = DAM_MAGIC;
 	fight_tactic = FAI_DEMON;
 	senses = SENSE_HEAR | SENSE_SEE | SENSE_SMELL;
 	senses_range = PERC_DIST_MONSTER_ACTIVE_MAX;

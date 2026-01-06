@@ -4,11 +4,11 @@ prototype MST_DEFAULT_WARG(C_NPC)
 	name[0] = "Варг";
 	guild = GIL_WOLF;
 	aivar[AIV_MM_REAL_ID] = ID_WARG;
-	level = 15;
-	attribute[ATR_STRENGTH] = 75;
-	attribute[ATR_DEXTERITY] = 75;
-	attribute[ATR_HITPOINTS_MAX] = 150;
-	attribute[ATR_HITPOINTS] = 150;
+	level = 9;
+	attribute[ATR_STRENGTH] = 45;
+	attribute[ATR_DEXTERITY] = 45;
+	attribute[ATR_HITPOINTS_MAX] = 90;
+	attribute[ATR_HITPOINTS] = 90;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 30;
@@ -51,14 +51,8 @@ instance WARG(MST_DEFAULT_WARG)
 instance BLACKWOLF(MST_DEFAULT_WARG)
 {
 	name[0] = "Черный волк";
-	level = 6;
+	level = 8;
 	aivar[AIV_MM_REAL_ID] = ID_WOLF;
-	attribute[ATR_STRENGTH] = 15;
-	attribute[ATR_DEXTERITY] = 20;
-	attribute[ATR_HITPOINTS_MAX] = 120;
-	attribute[ATR_HITPOINTS] = 120;
-	attribute[ATR_MANA_MAX] = 0;
-	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 12;
 	protection[PROT_EDGE] = 12;
 	protection[PROT_POINT] = 12;

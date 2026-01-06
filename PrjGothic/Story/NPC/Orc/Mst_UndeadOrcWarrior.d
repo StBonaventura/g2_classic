@@ -5,8 +5,8 @@ prototype MST_DEFAULT_UNDEADORCWARRIOR(C_NPC)
 	guild = GIL_UNDEADORC;
 	aivar[AIV_MM_REAL_ID] = ID_UNDEADORCWARRIOR;
 	level = 30;
-	attribute[ATR_STRENGTH] = 150;
-	attribute[ATR_DEXTERITY] = 150;
+	attribute[ATR_STRENGTH] = 120;
+	attribute[ATR_DEXTERITY] = 120;
 	attribute[ATR_HITPOINTS_MAX] = 300;
 	attribute[ATR_HITPOINTS] = 300;
 	attribute[ATR_MANA_MAX] = 0;

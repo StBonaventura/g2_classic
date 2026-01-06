@@ -5,10 +5,10 @@ prototype MST_DEFAULT_MINECRAWLER(C_NPC)
 	guild = GIL_MINECRAWLER;
 	aivar[AIV_MM_REAL_ID] = ID_MINECRAWLER;
 	level = 12;
-	attribute[ATR_STRENGTH] = 40;
-	attribute[ATR_DEXTERITY] = 40;
-	attribute[ATR_HITPOINTS_MAX] = 80;
-	attribute[ATR_HITPOINTS] = 80;
+	attribute[ATR_STRENGTH] = 60;
+	attribute[ATR_DEXTERITY] = 60;
+	attribute[ATR_HITPOINTS_MAX] = 120;
+	attribute[ATR_HITPOINTS] = 120;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 30;

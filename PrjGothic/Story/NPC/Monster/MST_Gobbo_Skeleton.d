@@ -11,12 +11,12 @@ prototype MST_DEFAULT_GOBBO_SKELETON(C_NPC)
 	attribute[ATR_HITPOINTS] = 50;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
-	protection[PROT_BLUNT] = 20;
-	protection[PROT_EDGE] = 20;
+	protection[PROT_BLUNT] = 0;
+	protection[PROT_EDGE] = 30;
 	protection[PROT_POINT] = 1000;
-	protection[PROT_FIRE] = 20;
-	protection[PROT_FLY] = 20;
-	protection[PROT_MAGIC] = 20;
+	protection[PROT_FIRE] = 0;
+	protection[PROT_FLY] = 0;
+	protection[PROT_MAGIC] = 30;
 	damagetype = DAM_EDGE;
 	fight_tactic = FAI_GOBBO;
 	senses = SENSE_HEAR | SENSE_SEE | SENSE_SMELL;

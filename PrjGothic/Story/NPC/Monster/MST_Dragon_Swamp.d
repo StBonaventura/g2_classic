@@ -9,8 +9,8 @@ prototype MST_DEFAULT_DRAGON_SWAMP(C_NPC)
 //	attribute[ATR_STRENGTH] = 120;
 	attribute[ATR_STRENGTH] = 11;
 	attribute[ATR_DEXTERITY] = 100;
-	attribute[ATR_HITPOINTS_MAX] = 500;
-	attribute[ATR_HITPOINTS] = 500;
+	attribute[ATR_HITPOINTS_MAX] = 1000;
+	attribute[ATR_HITPOINTS] = 1000;
 	attribute[ATR_MANA_MAX] = 1000;
 	attribute[ATR_MANA] = 1000;
 	protection[PROT_BLUNT] = 90;

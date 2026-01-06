@@ -4,11 +4,11 @@ prototype MST_DEFAULT_MEATBUG(C_NPC)
 	name[0] = "ћ€сной жук";
 	guild = GIL_MEATBUG;
 	aivar[AIV_MM_REAL_ID] = ID_MEATBUG;
-	level = 1;
+	level = 0;
 	attribute[ATR_STRENGTH] = 1;
 	attribute[ATR_DEXTERITY] = 1;
-	attribute[ATR_HITPOINTS_MAX] = 5;
-	attribute[ATR_HITPOINTS] = 5;
+	attribute[ATR_HITPOINTS_MAX] = 1;
+	attribute[ATR_HITPOINTS] = 1;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 0;

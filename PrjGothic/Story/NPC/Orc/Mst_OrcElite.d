@@ -6,7 +6,7 @@ prototype MST_DEFAULT_ORCELITE(C_NPC)
 	aivar[AIV_MM_REAL_ID] = ID_ORCELITE;
 	voice = 18;
 	level = 35;
-	attribute[ATR_STRENGTH] = 130;
+	attribute[ATR_STRENGTH] = 140;
 	attribute[ATR_DEXTERITY] = 100;
 	attribute[ATR_HITPOINTS_MAX] = 300;
 	attribute[ATR_HITPOINTS] = 300;
@@ -62,6 +62,7 @@ instance ORKELITE_ANTIPALADINORKOBERST(MST_DEFAULT_ORCELITE)
 {
 	name[0] = "Полковник орков";
 	aivar[AIV_MM_REAL_ID] = ID_ORCCOMMANDER;
+	level = 40;
 	attribute[ATR_STRENGTH] = 160;
 	attribute[ATR_DEXTERITY] = 120;
 	attribute[ATR_HITPOINTS_MAX] = 400;

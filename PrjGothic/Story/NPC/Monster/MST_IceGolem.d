@@ -14,7 +14,7 @@ prototype MST_DEFAULT_ICEGOLEM(C_NPC)
 	protection[PROT_BLUNT] = 70;
 	protection[PROT_EDGE] = 90;
 	protection[PROT_POINT] = 1000;
-	protection[PROT_FIRE] = 80;
+	protection[PROT_FIRE] = 0;
 	protection[PROT_FLY] = 1000;
 	protection[PROT_MAGIC] = 60;
 	damagetype = DAM_BLUNT;
