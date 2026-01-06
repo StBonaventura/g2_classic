@@ -6,7 +6,7 @@ prototype MST_DEFAULT_ORCWARRIOR(C_NPC)
 	aivar[AIV_MM_REAL_ID] = ID_ORCWARRIOR;
 	voice = 18;
 	level = 25;
-	attribute[ATR_STRENGTH] = 60;
+	attribute[ATR_STRENGTH] = 100;
 	attribute[ATR_DEXTERITY] = 60;
 	attribute[ATR_HITPOINTS_MAX] = 200;
 	attribute[ATR_HITPOINTS] = 200;
