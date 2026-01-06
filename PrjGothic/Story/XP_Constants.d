@@ -1,14 +1,8 @@
 
-var int xp_ambient;
-const int XP_AMBIENTKAP1 = 25;
-const int XP_AMBIENTKAP2 = 75;
-const int XP_AMBIENTKAP3 = 150;
-const int XP_AMBIENTKAP4 = 200;
-const int XP_AMBIENTKAP5 = 250;
-const int XP_AMBIENTKAP6 = 300;
+const int XP_AMBIENT = 50;
 const int XP_BOOK_LEVEL_1 = 50;
-const int XP_BOOK_LEVEL_2 = 75;
-const int XP_BOOK_LEVEL_3 = 100;
+const int XP_BOOK_LEVEL_2 = 100;
+const int XP_BOOK_LEVEL_3 = 150;
 const int XP_BANDITWEG = 50;
 const int XP_SCHULDENBUCH = 200;
 const int XP_BRINGOLDCOIN = 10;

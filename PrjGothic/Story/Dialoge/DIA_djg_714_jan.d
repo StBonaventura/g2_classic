@@ -628,7 +628,7 @@ func void dia_jan_dragonblood_1()
 	var string bloodleft;
 	dragonbloodcount = 1;
 	b_giveinvitems(other,self,itat_dragonblood,dragonbloodcount);
-	xp_djg_bringdragonbloods = dragonbloodcount * XP_AMBIENTKAP4;
+	xp_djg_bringdragonbloods = dragonbloodcount * XP_AMBIENTKAP;
 	b_giveplayerxp(xp_djg_bringdragonbloods);
 	dragonbloodgeld = dragonbloodcount * VALUE_DRAGONBLOOD;
 	CreateInvItems(self,itmi_gold,dragonbloodgeld);
@@ -654,7 +654,7 @@ func void dia_jan_dragonblood_all()
 	var string bloodleft;
 	dragonbloodcount = Npc_HasItems(other,itat_dragonblood);
 	b_giveinvitems(other,self,itat_dragonblood,dragonbloodcount);
-	xp_djg_bringdragonbloods = dragonbloodcount * XP_AMBIENTKAP4;
+	xp_djg_bringdragonbloods = dragonbloodcount * XP_AMBIENTKAP;
 	b_giveplayerxp(xp_djg_bringdragonbloods);
 	dragonbloodgeld = dragonbloodcount * VALUE_DRAGONBLOOD;
 	CreateInvItems(self,itmi_gold,dragonbloodgeld);

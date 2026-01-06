@@ -457,7 +457,7 @@ func void dia_sagitta_thekla_info()
 	AI_Output(other,self,"DIA_Sagitta_Thekla_15_00");	//Текла послала меня к тебе за травами.
 	AI_Output(self,other,"DIA_Sagitta_Thekla_17_01");	//Ах, да. Вообще-то я ожидала ее еще несколько дней назад.
 	AI_Output(self,other,"DIA_Sagitta_Thekla_17_02");	//Вот, держи пакет. И поосторожнее с ним!
-	b_giveplayerxp(XP_AMBIENTKAP3);
+	b_giveplayerxp(XP_AMBIENTKAP);
 	CreateInvItems(self,itmi_theklaspaket,1);
 	b_giveinvitems(self,other,itmi_theklaspaket,1);
 };

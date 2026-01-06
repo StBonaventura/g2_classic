@@ -53,7 +53,7 @@ func int dia_bdt_1031_fluechtling_tip1_condition()
 func void dia_bdt_1031_fluechtling_tip1_info()
 {
 	AI_Output(self,other,"DIA_BDT_1031_Fluechtling_Tip1_07_00");	//Тебе лучше держаться от меня подальше, если не хочешь попасть в тюрьму.
-	b_giveplayerxp(XP_AMBIENTKAP3);
+	b_giveplayerxp(XP_AMBIENTKAP);
 	if(SCFOUNDMORGAHARD == FALSE)
 	{
 		Info_ClearChoices(dia_bdt_1031_fluechtling_tip1);
@@ -216,7 +216,7 @@ func int dia_bdt_1033_fluechtling_tip2_condition()
 func void dia_bdt_1033_fluechtling_tip2_info()
 {
 	AI_Output(self,other,"DIA_BDT_1033_Fluechtling_Tip2_07_00");	//(испуганно) Что тебе нужно от меня?
-	b_giveplayerxp(XP_AMBIENTKAP3);
+	b_giveplayerxp(XP_AMBIENTKAP);
 	if(SCFOUNDMORGAHARD == FALSE)
 	{
 		Info_ClearChoices(dia_bdt_1033_fluechtling_tip2);

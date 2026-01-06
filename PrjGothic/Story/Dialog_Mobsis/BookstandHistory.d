@@ -35,7 +35,7 @@ func void use_bookstandhistory1_s1()
 		Doc_Show(ndocid);
 		if(HISTORY_1_PERMANENT == FALSE)
 		{
-			b_giveplayerxp(XP_AMBIENT);
+			b_giveplayerxp(XP_BOOK_LEVEL_1);
 			HISTORY_1_PERMANENT = TRUE;
 		};
 	};
@@ -65,7 +65,7 @@ func void use_bookstandhistory2_s1()
 		Doc_Show(ndocid);
 		if(HISTORY_2_PERMANENT == FALSE)
 		{
-			b_giveplayerxp(XP_AMBIENT);
+			b_giveplayerxp(XP_BOOK_LEVEL_2);
 			HISTORY_2_PERMANENT = TRUE;
 		};
 	};
@@ -99,7 +99,7 @@ func void use_bookstandhistory3_s1()
 		Doc_Show(ndocid);
 		if(HISTORY_3_PERMANENT == FALSE)
 		{
-			b_giveplayerxp(XP_AMBIENT);
+			b_giveplayerxp(XP_BOOK_LEVEL_3);
 			HISTORY_3_PERMANENT = TRUE;
 		};
 	};

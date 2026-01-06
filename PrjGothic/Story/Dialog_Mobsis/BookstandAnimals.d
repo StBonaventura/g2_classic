@@ -38,7 +38,7 @@ func void use_bookstandanimals1_s1()
 		Doc_Show(ndocid);
 		if(ANIMALS_1_PERMANENT == FALSE)
 		{
-			b_giveplayerxp(XP_AMBIENT);
+			b_giveplayerxp(XP_BOOK_LEVEL_1);
 			ANIMALS_1_PERMANENT = TRUE;
 		};
 	};
@@ -78,7 +78,7 @@ func void use_bookstandanimals2_s1()
 		Doc_Show(ndocid);
 		if(ANIMALS_2_PERMANENT == FALSE)
 		{
-			b_giveplayerxp(XP_AMBIENT);
+			b_giveplayerxp(XP_BOOK_LEVEL_2);
 			ANIMALS_2_PERMANENT = TRUE;
 		};
 	};
@@ -117,7 +117,7 @@ func void use_bookstandanimals3_s1()
 		Doc_Show(ndocid);
 		if(ANIMALS_3_PERMANENT == FALSE)
 		{
-			b_giveplayerxp(XP_AMBIENT);
+			b_giveplayerxp(XP_BOOK_LEVEL_3);
 			ANIMALS_3_PERMANENT = TRUE;
 		};
 	};

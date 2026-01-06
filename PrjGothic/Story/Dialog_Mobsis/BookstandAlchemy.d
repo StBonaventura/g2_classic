@@ -44,7 +44,7 @@ func void use_bookstandalchemy1_s1()
 		Doc_Show(ndocid);
 		if(ALCHEMY_1_PERMANENT == FALSE)
 		{
-			b_giveplayerxp(XP_AMBIENT);
+			b_giveplayerxp(XP_BOOK_LEVEL_1);
 			ALCHEMY_1_PERMANENT = TRUE;
 		};
 	};
@@ -91,7 +91,7 @@ func void use_bookstandalchemy2_s1()
 		Doc_Show(ndocid);
 		if(ALCHEMY_2_PERMANENT == FALSE)
 		{
-			b_giveplayerxp(XP_AMBIENT);
+			b_giveplayerxp(XP_BOOK_LEVEL_2);
 			ALCHEMY_2_PERMANENT = TRUE;
 		};
 	};
@@ -135,7 +135,7 @@ func void use_bookstandalchemy3_s1()
 		Doc_Show(ndocid);
 		if(ALCHEMY_3_PERMANENT == FALSE)
 		{
-			b_giveplayerxp(XP_AMBIENT);
+			b_giveplayerxp(XP_BOOK_LEVEL_3);
 			ALCHEMY_3_PERMANENT = TRUE;
 		};
 	};

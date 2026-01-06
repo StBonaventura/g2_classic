@@ -272,7 +272,7 @@ func void dia_vino_dmtamstart_info()
 	{
 		AI_Output(self,other,"DIA_Vino_DMTAMSTART_05_01");	//Дерьмово. Ополчение нашло мой тайный винокуренный заводик.
 		AI_Output(self,other,"DIA_Vino_DMTAMSTART_05_02");	//Остается надеяться, что они никогда не узнают, что он принадлежал мне.
-		b_giveplayerxp(XP_AMBIENTKAP3);
+		b_giveplayerxp(XP_AMBIENTKAP);
 		DIA_VINO_DMTAMSTART_ONETIME = TRUE;
 	}
 	else

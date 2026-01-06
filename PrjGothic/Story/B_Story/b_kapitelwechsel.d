@@ -36,29 +36,5 @@ func void b_kapitelwechsel(var int neues_kapitel,var int aktuelles_level_zen)
 	{
 		b_enter_newworld();
 	};
-	if(KAPITEL == 1)
-	{
-		XP_AMBIENT = XP_AMBIENTKAP1;
-	};
-	if(KAPITEL == 2)
-	{
-		XP_AMBIENT = XP_AMBIENTKAP2;
-	};
-	if(KAPITEL == 3)
-	{
-		XP_AMBIENT = XP_AMBIENTKAP3;
-	};
-	if(KAPITEL == 4)
-	{
-		XP_AMBIENT = XP_AMBIENTKAP4;
-	};
-	if(KAPITEL == 5)
-	{
-		XP_AMBIENT = XP_AMBIENTKAP5;
-	};
-	if(KAPITEL == 6)
-	{
-		XP_AMBIENT = XP_AMBIENTKAP6;
-	};
 };
 
