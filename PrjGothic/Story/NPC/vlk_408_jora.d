@@ -10,7 +10,7 @@ instance VLK_408_JORA(NPC_DEFAULT)
 	b_setattributestochapter(self,3);
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_alrikssword_mis);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL02,BODYTEX_N,itar_vlk_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL02,BODYTEX_PLAYER_G2,itar_vlk_m);
 	Mdl_SetModelFatness(self,1.5);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

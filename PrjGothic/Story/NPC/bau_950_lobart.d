@@ -11,7 +11,7 @@ instance BAU_950_LOBART(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_1h_bau_axe);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART_SENYAN,BODYTEX_N,itar_bau_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART_SENYAN,BODYTEX_PLAYER_G2,itar_bau_m);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

@@ -12,7 +12,7 @@ instance VLK_432_MOE(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_NORMAL;
 	EquipItem(self,itmw_1h_bau_mace);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_SCAR,BODYTEX_N,itar_vlk_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_SCAR,BODYTEX_PLAYER_G2,itar_vlk_l);
 	Mdl_SetModelFatness(self,0.5);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

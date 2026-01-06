@@ -12,7 +12,7 @@ instance BAU_961_GAAN(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_bau_mace);
 	EquipItem(self,itrw_sld_bow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL02,BODYTEX_N,itar_bau_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL02,BODYTEX_PLAYER_G2,itar_bau_l);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

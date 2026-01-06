@@ -12,7 +12,7 @@ instance MIL_316_WAMBO(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_mil_sword);
 	b_createambientinv(self);
 	CreateInvItems(self,itke_city_tower_04,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART16,BODYTEX_N,itar_mil_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART16,BODYTEX_PLAYER_G2,itar_mil_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

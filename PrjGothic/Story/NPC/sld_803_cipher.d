@@ -16,7 +16,7 @@ instance SLD_803_CIPHER(NPC_DEFAULT)
 	CreateInvItems(self,itrw_sld_bow,1);
 	CreateInvItems(self,itmw_2h_orcaxe_01,1);
 	CreateInvItems(self,itlstorch,8);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART10,BODYTEX_N,itar_sld_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART10,BODYTEX_PLAYER_G2,itar_sld_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

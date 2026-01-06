@@ -13,7 +13,7 @@ instance PC_MAGE_DI(NPC_DEFAULT)
 	b_setattributestochapter(self,6);
 	fight_tactic = FAI_HUMAN_STRONG;
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_MILTEN,BODYTEX_N,itar_kdf_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_MILTEN,BODYTEX_PLAYER_G2,itar_kdf_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Mage.mds");
 	b_givenpctalents(self);

@@ -12,7 +12,7 @@ instance VLK_460_BUERGER(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_1h_vlk_dagger);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMAL_OLLI_KAHN,BODYTEX_N,itar_vlk_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMAL_OLLI_KAHN,BODYTEX_PLAYER_G2,itar_vlk_m);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Arrogance.mds");
 	b_givenpctalents(self);

@@ -12,7 +12,7 @@ instance VLK_479_LUCY(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	b_createambientinv(self);
 	EquipItem(self,itmw_1h_vlk_dagger);
-	b_setnpcvisual(self,FEMALE,"Hum_Head_Babe1",FACEBABE_N_ANNE,BODYTEX_N,itar_baubabe_l);
+	b_setnpcvisual(self,FEMALE,"Hum_Head_Babe1",FACEBABE_N_ANNE,BODYTEX_PLAYER_G2,itar_baubabe_l);
 	Mdl_ApplyOverlayMds(self,"Humans_Babe.mds");
 	b_givenpctalents(self);
 	b_setfightskills(self,35);

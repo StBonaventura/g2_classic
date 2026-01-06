@@ -12,7 +12,7 @@ instance BAU_960_BENGAR(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_bau_axe);
 	EquipItem(self,itrw_sld_bow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL_OLLI_KAHN,BODYTEX_N,itar_bau_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL_OLLI_KAHN,BODYTEX_PLAYER_G2,itar_bau_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

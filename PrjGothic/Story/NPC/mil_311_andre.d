@@ -1,7 +1,7 @@
 
 instance MIL_311_ANDRE(NPC_DEFAULT)
 {
-	name[0] = "Андре";
+	name[0] = "Лорд Андре";
 	guild = GIL_MIL;
 	id = 311;
 	voice = 8;
@@ -14,9 +14,9 @@ instance MIL_311_ANDRE(NPC_DEFAULT)
 	aivar[AIV_IGNORE_SHEEPKILLER] = TRUE;
 	b_setattributestochapter(self,6);
 	fight_tactic = FAI_HUMAN_STRONG;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,ITMW_1H_BLESSED_02);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_WEAK12,BODYTEX_N,itar_pal_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_WEAK12,BODYTEX_PLAYER_G2,itar_pal_h);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

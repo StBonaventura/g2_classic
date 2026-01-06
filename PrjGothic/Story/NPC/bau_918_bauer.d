@@ -13,7 +13,7 @@ instance BAU_918_BAUER(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_1h_bau_axe);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_NORMAL17,BODYTEX_N,itar_bau_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_NORMAL17,BODYTEX_PLAYER_G2,itar_bau_l);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	daily_routine = rtn_start_918;

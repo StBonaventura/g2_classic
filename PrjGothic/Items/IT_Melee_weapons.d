@@ -93,7 +93,7 @@ instance ITMW_1H_VLK_MACE(C_ITEM)
 
 instance ITMW_1H_MACE_L_03(C_ITEM)
 {
-	name = "Дубина";
+	name = "Легкая булава";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;
@@ -139,7 +139,7 @@ instance ITMW_1H_BAU_MACE(C_ITEM)
 
 instance ITMW_1H_VLK_AXE(C_ITEM)
 {
-	name = "Легкий топор";
+	name = "Топорик";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_METAL;
@@ -162,7 +162,7 @@ instance ITMW_1H_VLK_AXE(C_ITEM)
 
 instance ITMW_1H_MACE_L_04(C_ITEM)
 {
-	name = "Молот кузнеца";
+	name = "Кузнечный молот";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_METAL;
@@ -254,7 +254,7 @@ instance ITMW_1H_SWORD_L_03(C_ITEM)
 
 instance ITMW_SHORTSWORD2(C_ITEM)
 {
-	name = "Грубый короткий меч";
+	name = "Ржавый короткий меч";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -308,13 +308,13 @@ instance ITMW_1H_VLK_SWORD(C_ITEM)
 	damagetotal = DAMAGE_VLKSCHWERT;
 	damagetype = DAM_EDGE;
 	range = RANGE_VLKSCHWERT;
-	cond_atr[2] = ATR_DEXTERITY;
+	cond_atr[2] = ATR_STRENGTH;
 	cond_value[2] = CONDITION_VLKSCHWERT;
 	visual = "ItMw_018_1h_SwordCane_01.3ds";
 	description = name;
 	text[2] = NAME_DAMAGE;
 	count[2] = damagetotal;
-	text[3] = NAME_DEX_NEEDED;
+	text[3] = NAME_STR_NEEDED;
 	count[3] = cond_value[2];
 	text[4] = NAME_ONEHANDED;
 	text[5] = NAME_VALUE;
@@ -413,9 +413,9 @@ instance ITMW_1H_MISC_SWORD(C_ITEM)
 	count[5] = value;
 };
 
-instance ITMW_1H_MISC_AXE(C_ITEM)
+instance ITMW_2H_MISC_AXE(C_ITEM)
 {
-	name = "Ржавый топор";
+	name = "Ржавая секира";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_METAL;
@@ -484,7 +484,7 @@ instance ITMW_1H_MIL_SWORD(C_ITEM)
 
 instance ITMW_1H_SLD_AXE(C_ITEM)
 {
-	name = "Грубый тесак";
+	name = "Топор";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_METAL;
@@ -507,7 +507,7 @@ instance ITMW_1H_SLD_AXE(C_ITEM)
 
 instance ITMW_1H_SLD_SWORD(C_ITEM)
 {
-	name = "Грубый меч";
+	name = "Меч";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -530,7 +530,7 @@ instance ITMW_1H_SLD_SWORD(C_ITEM)
 
 instance ITMW_2H_SLD_AXE(C_ITEM)
 {
-	name = "Грубый боевой топор";
+	name = "Секира наемника";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_METAL;
@@ -553,7 +553,7 @@ instance ITMW_2H_SLD_AXE(C_ITEM)
 
 instance ITMW_2H_SLD_SWORD(C_ITEM)
 {
-	name = "Грубый двуручный меч";
+	name = "Двуручный меч наемника";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -576,7 +576,7 @@ instance ITMW_2H_SLD_SWORD(C_ITEM)
 
 instance ITMW_1H_PAL_SWORD(C_ITEM)
 {
-	name = "Меч паладина";
+	name = "Меч рыцаря";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -599,7 +599,7 @@ instance ITMW_1H_PAL_SWORD(C_ITEM)
 
 instance ITMW_2H_PAL_SWORD(C_ITEM)
 {
-	name = "Двуручный меч паладина";
+	name = "Двуручный меч рыцаря";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -645,7 +645,7 @@ instance ITMW_2H_ORCAXE_01(C_ITEM)
 
 instance ITMW_2H_ORCAXE_02(C_ITEM)
 {
-	name = "Средний топор орков";
+	name = "Топор орков";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_METAL;
@@ -691,7 +691,7 @@ instance ITMW_2H_ORCAXE_03(C_ITEM)
 
 instance ITMW_2H_ORCAXE_04(C_ITEM)
 {
-	name = "Брутальный топор орков";
+	name = "Командирский топор орков";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_METAL;
@@ -760,7 +760,7 @@ instance ITMW_2H_ORCSWORD_01(C_ITEM)
 
 instance ITMW_2H_ORCSWORD_02(C_ITEM)
 {
-	name = "Военный меч орков";
+	name = "Меч орков";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -806,7 +806,7 @@ instance ITMW_SHORTSWORD3(C_ITEM)
 
 instance ITMW_NAGELKEULE(C_ITEM)
 {
-	name = "Дубина с шипами";
+	name = "Булава с шипами";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;
@@ -852,7 +852,7 @@ instance ITMW_SHORTSWORD4(C_ITEM)
 
 instance ITMW_KRIEGSKEULE(C_ITEM)
 {
-	name = "Военная дубина";
+	name = "Пернач";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;
@@ -875,7 +875,7 @@ instance ITMW_KRIEGSKEULE(C_ITEM)
 
 instance ITMW_RICHTSTAB(C_ITEM)
 {
-	name = "Посох судьи";
+	name = "Фалкс";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;
@@ -921,7 +921,7 @@ instance ITMW_SHORTSWORD5(C_ITEM)
 
 instance ITMW_KRIEGSHAMMER1(C_ITEM)
 {
-	name = "Военный молот";
+	name = "Боевой молот";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_METAL;
@@ -967,7 +967,7 @@ instance ITMW_HELLEBARDE(C_ITEM)
 
 instance ITMW_NAGELKEULE2(C_ITEM)
 {
-	name = "Тяжелая дубина с шипами";
+	name = "Тяжелая булава с шипами";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;
@@ -1036,7 +1036,7 @@ instance ITMW_PIRATENSAEBEL(C_ITEM)
 
 instance ITMW_SCHWERT(C_ITEM)
 {
-	name = "Грубый длинный меч";
+	name = "Ржавый длинный меч";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -1082,7 +1082,7 @@ instance ITMW_1H_COMMON_01(C_ITEM)
 
 instance ITMW_STABKEULE(C_ITEM)
 {
-	name = "Палица";
+	name = "Посох жреца";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_WOOD;
@@ -1128,7 +1128,7 @@ instance ITMW_ZWEIHAENDER1(C_ITEM)
 
 instance ITMW_STEINBRECHER(C_ITEM)
 {
-	name = "Дробитель камней";
+	name = "Дробитель";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;
@@ -1151,7 +1151,7 @@ instance ITMW_STEINBRECHER(C_ITEM)
 
 instance ITMW_SPICKER(C_ITEM)
 {
-	name = "Раскалыватель черепов";
+	name = "Череполом";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;
@@ -1174,7 +1174,7 @@ instance ITMW_SPICKER(C_ITEM)
 
 instance ITMW_STREITAXT1(C_ITEM)
 {
-	name = "Легкий боевой топор";
+	name = "Легкая секира";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_METAL;
@@ -1289,7 +1289,7 @@ instance ITMW_BARTAXT(C_ITEM)
 
 instance ITMW_MORGENSTERN(C_ITEM)
 {
-	name = "Булава с шипами";
+	name = "Моргенштерн";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;
@@ -1312,7 +1312,7 @@ instance ITMW_MORGENSTERN(C_ITEM)
 
 instance ITMW_SCHWERT3(C_ITEM)
 {
-	name = "Грубый полуторный меч";
+	name = "Ржавый полуторный меч";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -1412,13 +1412,13 @@ instance ITMW_RAPIER(C_ITEM)
 	damagetotal = DAMAGE_RAPIER;
 	damagetype = DAM_EDGE;
 	range = RANGE_RAPIER;
-	cond_atr[2] = ATR_DEXTERITY;
+	cond_atr[2] = ATR_STRENGTH;
 	cond_value[2] = CONDITION_RAPIER;
 	visual = "ItMw_050_1h_Sword_Rapier_01.3ds";
 	description = name;
 	text[2] = NAME_DAMAGE;
 	count[2] = damagetotal;
-	text[3] = NAME_DEX_NEEDED;
+	text[3] = NAME_STR_NEEDED;
 	count[3] = cond_value[2];
 	text[4] = NAME_ONEHANDED;
 	text[5] = NAME_VALUE;
@@ -1450,7 +1450,7 @@ instance ITMW_RUBINKLINGE(C_ITEM)
 
 instance ITMW_STREITKOLBEN(C_ITEM)
 {
-	name = "Булава";
+	name = "Тяжелый дробитель";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_METAL;
@@ -1473,7 +1473,7 @@ instance ITMW_STREITKOLBEN(C_ITEM)
 
 instance ITMW_ZWEIHAENDER2(C_ITEM)
 {
-	name = "Усиленный двуручный меч";
+	name = "Двуручный меч";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -1565,7 +1565,7 @@ instance ITMW_SCHWERT5(C_ITEM)
 
 instance ITMW_INQUISITOR(C_ITEM)
 {
-	name = "Инквизитор";
+	name = "Изысканный пернач";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_METAL;
@@ -1588,7 +1588,7 @@ instance ITMW_INQUISITOR(C_ITEM)
 
 instance ITMW_STREITAXT2(C_ITEM)
 {
-	name = "Боевой топор";
+	name = "Секира";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_METAL;
@@ -1680,7 +1680,7 @@ instance ITMW_2H_SPECIAL_02(C_ITEM)
 
 instance ITMW_ELBASTARDO(C_ITEM)
 {
-	name = "Эль-бастардо";
+	name = "Эль Бастардо";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -1703,7 +1703,7 @@ instance ITMW_ELBASTARDO(C_ITEM)
 
 instance ITMW_KRIEGSHAMMER2(C_ITEM)
 {
-	name = "Тяжелый военный молот";
+	name = "Тяжелый боевой молот";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_METAL;
@@ -1734,13 +1734,13 @@ instance ITMW_MEISTERDEGEN(C_ITEM)
 	damagetotal = DAMAGE_MEISTERDEGEN;
 	damagetype = DAM_EDGE;
 	range = RANGE_MEISTERDEGEN;
-	cond_atr[2] = ATR_DEXTERITY;
+	cond_atr[2] = ATR_STRENGTH;
 	cond_value[2] = CONDITION_MEISTERDEGEN;
 	visual = "ItMw_065_1h_SwordCane_02.3ds";
 	description = name;
 	text[2] = NAME_DAMAGE;
 	count[2] = damagetotal;
-	text[3] = NAME_DEX_NEEDED;
+	text[3] = NAME_STR_NEEDED;
 	count[3] = cond_value[2];
 	text[4] = NAME_ONEHANDED;
 	text[5] = NAME_VALUE;
@@ -1818,7 +1818,7 @@ instance ITMW_ZWEIHAENDER4(C_ITEM)
 
 instance ITMW_SCHLACHTAXT(C_ITEM)
 {
-	name = "Военный топор";
+	name = "Тяжелая секира";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_METAL;
@@ -1841,7 +1841,7 @@ instance ITMW_SCHLACHTAXT(C_ITEM)
 
 instance ITMW_KRUMMSCHWERT(C_ITEM)
 {
-	name = "Тяжелый ятаган";
+	name = "Рудная сабля";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -1864,7 +1864,7 @@ instance ITMW_KRUMMSCHWERT(C_ITEM)
 
 instance ITMW_BARBARENSTREITAXT(C_ITEM)
 {
-	name = "Боевой топор варваров";
+	name = "Секира варваров";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_METAL;
@@ -1887,7 +1887,7 @@ instance ITMW_BARBARENSTREITAXT(C_ITEM)
 
 instance ITMW_STURMBRINGER(C_ITEM)
 {
-	name = "Несущий бурю";
+	name = "Буревестник";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -2048,7 +2048,7 @@ instance ITMW_2H_SPECIAL_04(C_ITEM)
 
 instance ITMW_1H_BLESSED_01(C_ITEM)
 {
-	name = "Грубый рудный клинок";
+	name = "Меч паладина";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD | ITEM_MISSION;
 	material = MAT_METAL;
@@ -2071,7 +2071,7 @@ instance ITMW_1H_BLESSED_01(C_ITEM)
 
 instance ITMW_1H_BLESSED_02(C_ITEM)
 {
-	name = "Освященный рудный клинок";
+	name = "Освященный рудный меч";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD | ITEM_MISSION;
 	material = MAT_METAL;
@@ -2117,7 +2117,7 @@ instance ITMW_1H_BLESSED_03(C_ITEM)
 
 instance ITMW_2H_BLESSED_01(C_ITEM)
 {
-	name = "Грубый рудный клинок";
+	name = "Двуручный меч паладина";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -2140,7 +2140,7 @@ instance ITMW_2H_BLESSED_01(C_ITEM)
 
 instance ITMW_2H_BLESSED_02(C_ITEM)
 {
-	name = "Меч ордена";
+	name = "Освященный двуручный меч";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;

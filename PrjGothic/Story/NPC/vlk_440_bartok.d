@@ -14,7 +14,7 @@ instance VLK_440_BARTOK(NPC_DEFAULT)
 	b_createambientinv(self);
 	CreateInvItems(self,itrw_arrow,40);
 	CreateInvItems(self,itpo_health_03,3);
-	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_IMPORTANT_ARTO,BODYTEX_N,itar_vlk_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_IMPORTANT_ARTO,BODYTEX_PLAYER_G2,itar_vlk_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

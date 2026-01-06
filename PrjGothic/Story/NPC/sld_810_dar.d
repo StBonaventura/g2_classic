@@ -14,7 +14,7 @@ instance SLD_810_DAR(NPC_DEFAULT)
 	EquipItem(self,itrw_sld_bow);
 	b_createambientinv(self);
 	CreateInvItems(self,itmi_joint,10);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL_SPASSVOGEL,BODYTEX_N,itar_sld_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL_SPASSVOGEL,BODYTEX_PLAYER_G2,itar_sld_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

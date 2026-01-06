@@ -12,7 +12,7 @@ instance VLK_466_GERNOD(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_1h_bau_mace);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_WEAK_ULBERT,BODYTEX_N,itar_vlk_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_WEAK_ULBERT,BODYTEX_PLAYER_G2,itar_vlk_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Tired.mds");
 	b_givenpctalents(self);

@@ -12,7 +12,7 @@ instance VLK_453_BUERGER(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_1h_vlk_axe);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART22,BODYTEX_N,itar_bau_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART22,BODYTEX_PLAYER_G2,itar_bau_l);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Tired.mds");
 	b_givenpctalents(self);

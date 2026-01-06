@@ -12,7 +12,7 @@ instance VLK_4106_DOBAR(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_vlk_axe);
 	b_createambientinv(self);
 	CreateInvItems(self,itmi_nugget,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_SNAF,BODYTEX_N,itar_smith);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_SNAF,BODYTEX_PLAYER_G2,itar_smith);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

@@ -13,7 +13,7 @@ instance DJG_700_SYLVIO(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_sld_sword);
 	EquipItem(self,itrw_crossbow_m_01);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Thief",FACE_N_SCAR,BODYTEX_N,itar_djg_h);
+	b_setnpcvisual(self,MALE,"Hum_Head_Thief",FACE_N_SCAR,BODYTEX_PLAYER_G2,itar_djg_h);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

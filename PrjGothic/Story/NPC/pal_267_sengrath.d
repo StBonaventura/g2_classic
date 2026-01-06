@@ -12,7 +12,7 @@ instance PAL_267_SENGRATH(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_pal_sword);
 	EquipItem(self,itrw_mil_crossbow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_NORMAL03,BODYTEX_N,itar_pal_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_NORMAL03,BODYTEX_PLAYER_G2,itar_pal_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

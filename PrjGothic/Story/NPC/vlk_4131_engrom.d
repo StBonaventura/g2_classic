@@ -12,7 +12,7 @@ instance VLK_4131_ENGROM(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_vlk_axe);
 	EquipItem(self,itrw_mil_crossbow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART20,BODYTEX_N,itar_leather_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART20,BODYTEX_PLAYER_G2,itar_leather_l);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

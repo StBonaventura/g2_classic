@@ -11,7 +11,7 @@ instance VLK_435_NADJA(NPC_DEFAULT)
 	b_setattributestochapter(self,1);
 	fight_tactic = FAI_HUMAN_COWARD;
 	b_createambientinv(self);
-	b_setnpcvisual(self,FEMALE,"Hum_Head_Babe8",FACEBABE_N_HURE,BODYTEX_N,itar_vlkbabe_h);
+	b_setnpcvisual(self,FEMALE,"Hum_Head_Babe8",FACEBABE_N_HURE,BODYTEX_PLAYER_G2,itar_vlkbabe_h);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Babe.mds");
 	b_givenpctalents(self);

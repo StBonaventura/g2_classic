@@ -12,7 +12,7 @@ instance VLK_4132_TALBIN_NW(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_bau_mace);
 	EquipItem(self,itrw_sld_bow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_BULLIT,BODYTEX_N,itar_leather_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_BULLIT,BODYTEX_PLAYER_G2,itar_leather_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

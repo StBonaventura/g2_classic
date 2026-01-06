@@ -12,7 +12,7 @@ instance SLD_808_JARVIS(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_sld_sword);
 	EquipItem(self,itrw_sld_bow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_TORLOF,BODYTEX_N,itar_sld_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_TORLOF,BODYTEX_PLAYER_G2,itar_sld_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

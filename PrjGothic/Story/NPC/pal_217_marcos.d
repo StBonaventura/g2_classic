@@ -9,7 +9,7 @@ instance PAL_217_MARCOS(NPC_DEFAULT)
 	npctype = NPCTYPE_OCMAIN;
 	b_setattributestochapter(self,4);
 	fight_tactic = FAI_HUMAN_STRONG;
-	EquipItem(self,itmw_1h_pal_sword);
+	EquipItem(self,ITMW_1H_BLESSED_02);
 	EquipItem(self,itrw_mil_crossbow);
 	CreateInvItems(self,itpo_health_03,5);
 	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_P_TOUGH_RODRIGUEZ,BODYTEX_P,itar_pal_h);

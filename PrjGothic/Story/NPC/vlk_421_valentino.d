@@ -12,7 +12,7 @@ instance VLK_421_VALENTINO(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_vlk_mace);
 	CreateInvItems(self,itmi_gold,200);
 	CreateInvItems(self,itke_valentino,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald.",FACE_N_NORMAL03,BODYTEX_N,itar_vlk_h);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald.",FACE_N_NORMAL03,BODYTEX_PLAYER_G2,itar_vlk_h);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

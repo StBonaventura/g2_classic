@@ -11,7 +11,7 @@ instance DJG_709_RETHON(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_MASTER;
 	EquipItem(self,itmw_1h_sld_sword);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_COOLPOCK,BODYTEX_N,itar_djg_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_COOLPOCK,BODYTEX_PLAYER_G2,itar_djg_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

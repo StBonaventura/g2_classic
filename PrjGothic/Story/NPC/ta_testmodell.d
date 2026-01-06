@@ -11,7 +11,7 @@
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_1h_bau_mace);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_OLDBALD_JEREMIAH,BODYTEX_N,0);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_OLDBALD_JEREMIAH,BODYTEX_PLAYER_G2,0);
 	b_givenpctalents(self);
 	b_setfightskills(self,70);
 	daily_routine = rtn_start_1500;
@@ -222,7 +222,7 @@ instance TA_SMALLTALKPARTNER(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_1h_bau_mace);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_OLDBALD_JEREMIAH,BODYTEX_N,0);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_OLDBALD_JEREMIAH,BODYTEX_PLAYER_G2,0);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Arrogance.mds");
 	b_givenpctalents(self);

@@ -12,7 +12,7 @@ instance SLD_841_ENGARDO(NPC_DEFAULT)
 	aivar[AIV_ENEMYOVERRIDE] = TRUE;
 	EquipItem(self,itmw_2h_sld_sword);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Pony",FACE_N_NORMAL_ERPRESSER,BODYTEX_N,itar_sld_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Pony",FACE_N_NORMAL_ERPRESSER,BODYTEX_PLAYER_G2,itar_sld_l);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

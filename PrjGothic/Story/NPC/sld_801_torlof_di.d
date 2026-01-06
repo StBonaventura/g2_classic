@@ -15,7 +15,7 @@ instance SLD_801_TORLOF_DI(NPC_DEFAULT)
 	EquipItem(self,itmw_2h_sld_sword);
 	EquipItem(self,itrw_sld_bow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Pony",FACE_N_TORLOF,BODYTEX_N,itar_sld_h);
+	b_setnpcvisual(self,MALE,"Hum_Head_Pony",FACE_N_TORLOF,BODYTEX_PLAYER_G2,itar_sld_h);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

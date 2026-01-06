@@ -12,7 +12,7 @@ instance VLK_433_BROMOR(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_vlk_dagger);
 	b_createambientinv(self);
 	CreateInvItems(self,itke_bromor,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_FINGERS,BODYTEX_N,itar_vlk_h);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_FINGERS,BODYTEX_PLAYER_G2,itar_vlk_h);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

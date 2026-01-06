@@ -10,7 +10,7 @@ instance VLK_414_HANNA(NPC_DEFAULT)
 	b_setattributestochapter(self,1);
 	fight_tactic = FAI_HUMAN_COWARD;
 	b_createambientinv(self);
-	b_setnpcvisual(self,FEMALE,"Hum_Head_Babe1",FACEBABE_N_WHITECLOTH,BODYTEX_N,itar_vlkbabe_l);
+	b_setnpcvisual(self,FEMALE,"Hum_Head_Babe1",FACEBABE_N_WHITECLOTH,BODYTEX_PLAYER_G2,itar_vlkbabe_l);
 	Mdl_ApplyOverlayMds(self,"Humans_Babe.mds");
 	b_givenpctalents(self);
 	b_setfightskills(self,35);

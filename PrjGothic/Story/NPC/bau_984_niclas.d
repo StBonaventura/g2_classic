@@ -12,7 +12,7 @@ instance BAU_984_NICLAS(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_sld_sword);
 	EquipItem(self,itrw_sld_bow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Thief",FACE_N_NORMALBART12,BODYTEX_N,itar_leather_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Thief",FACE_N_NORMALBART12,BODYTEX_PLAYER_G2,itar_leather_l);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

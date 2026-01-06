@@ -12,7 +12,7 @@ instance VLK_4110_JERGAN(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_2h_sld_axe);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_WHISTLER,BODYTEX_N,itar_bdt_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_WHISTLER,BODYTEX_PLAYER_G2,itar_bdt_m);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Tired.mds");
 	b_givenpctalents(self);

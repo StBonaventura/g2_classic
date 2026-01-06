@@ -11,7 +11,7 @@ instance DJG_738_TOTERDRACHENJAEGER(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_1h_sld_sword);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART17,BODYTEX_N,itar_djg_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART17,BODYTEX_PLAYER_G2,itar_djg_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

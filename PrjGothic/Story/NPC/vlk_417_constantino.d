@@ -10,7 +10,7 @@ instance VLK_417_CONSTANTINO(NPC_DEFAULT)
 	b_setattributestochapter(self,4);
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_1h_bau_axe);
-	b_setnpcvisual(self,MALE,"Hum_Head_Psionic.",FACE_N_OLDBALD_JEREMIAH,BODYTEX_N,itar_smith);
+	b_setnpcvisual(self,MALE,"Hum_Head_Psionic.",FACE_N_OLDBALD_JEREMIAH,BODYTEX_PLAYER_G2,itar_smith);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Tired.mds");
 	b_givenpctalents(self);

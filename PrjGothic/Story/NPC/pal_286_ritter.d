@@ -11,7 +11,7 @@ instance PAL_286_RITTER(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_MASTER;
 	EquipItem(self,itmw_1h_pal_sword);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_NORMALBART06,BODYTEX_N,itar_pal_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_NORMALBART06,BODYTEX_PLAYER_G2,itar_pal_m);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

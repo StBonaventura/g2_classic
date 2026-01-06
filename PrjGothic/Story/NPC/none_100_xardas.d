@@ -14,7 +14,7 @@ instance NONE_100_XARDAS(NPC_DEFAULT)
 	aivar[AIV_IGNORE_SHEEPKILLER] = TRUE;
 	b_setattributestochapter(self,6);
 	fight_tactic = FAI_HUMAN_MASTER;
-	b_setnpcvisual(self,MALE,"Hum_Head_Psionic",FACE_N_XARDAS,BODYTEX_N,itar_xardas);
+	b_setnpcvisual(self,MALE,"Hum_Head_Psionic",FACE_N_XARDAS,BODYTEX_PLAYER_G2,itar_xardas);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Mage.mds");
 	b_givenpctalents(self);

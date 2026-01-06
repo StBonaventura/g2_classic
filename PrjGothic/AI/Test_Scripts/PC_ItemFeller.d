@@ -108,7 +108,7 @@ instance PC_ITEMFELLER(NPC_DEFAULT)
 	CreateInvItems(self,itmw_2h_bau_axe,1);
 	CreateInvItems(self,itmw_2h_axe_l_01,1);
 	CreateInvItems(self,itmw_1h_misc_sword,1);
-	CreateInvItems(self,itmw_1h_misc_axe,1);
+	CreateInvItems(self,ITMW_2H_MISC_AXE,1);
 	CreateInvItems(self,itmw_2h_sword_m_01,1);
 	CreateInvItems(self,itmw_1h_mil_sword,1);
 	CreateInvItems(self,itmw_1h_sld_axe,1);

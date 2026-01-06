@@ -10,7 +10,7 @@ instance VLK_416_MATTEO(NPC_DEFAULT)
 	b_setattributestochapter(self,3);
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_1h_vlk_sword);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_GOMEZ,BODYTEX_N,itar_vlk_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_GOMEZ,BODYTEX_PLAYER_G2,itar_vlk_m);
 	Mdl_SetModelFatness(self,1.8);
 	Mdl_ApplyOverlayMds(self,"Humans_Arrogance.mds");
 	b_givenpctalents(self);

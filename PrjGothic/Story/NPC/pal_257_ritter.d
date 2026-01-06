@@ -12,7 +12,7 @@ instance PAL_257_RITTER(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_pal_sword);
 	EquipItem(self,itrw_mil_crossbow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART_SWINEY,BODYTEX_N,itar_pal_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART_SWINEY,BODYTEX_PLAYER_G2,itar_pal_m);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

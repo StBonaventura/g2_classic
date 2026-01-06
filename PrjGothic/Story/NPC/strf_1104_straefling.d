@@ -11,7 +11,7 @@ instance STRF_1104_STRAEFLING(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_2h_axe_l_01);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_WEAK04,BODYTEX_N,itar_prisoner);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_WEAK04,BODYTEX_PLAYER_G2,itar_prisoner);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Tired.mds");
 	b_givenpctalents(self);

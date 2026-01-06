@@ -13,7 +13,7 @@ instance PAL_299_SERGIO(NPC_DEFAULT)
 	b_createambientinv(self);
 	CreateInvItems(self,itke_innos_mis,1);
 	CreateInvItems(self,itpo_health_02,4);
-	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_NORMAL_ERPRESSER,BODYTEX_N,itar_pal_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_NORMAL_ERPRESSER,BODYTEX_PLAYER_G2,itar_pal_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

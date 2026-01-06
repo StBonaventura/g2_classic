@@ -13,7 +13,7 @@ instance MIL_317_RUGA(NPC_DEFAULT)
 	EquipItem(self,itrw_mil_crossbow);
 	b_createambientinv(self);
 	CreateInvItems(self,itke_city_tower_03,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_Thief",FACE_N_NORMALBART03,BODYTEX_N,itar_mil_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Thief",FACE_N_NORMALBART03,BODYTEX_PLAYER_G2,itar_mil_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

@@ -11,7 +11,7 @@ instance VLK_431_KARDIF(NPC_DEFAULT)
 	b_setattributestochapter(self,2);
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_1h_bau_mace);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART04,BODYTEX_N,itar_smith);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART04,BODYTEX_PLAYER_G2,itar_smith);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

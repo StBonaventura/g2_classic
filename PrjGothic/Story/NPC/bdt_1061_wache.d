@@ -12,7 +12,7 @@ instance BDT_1061_WACHE(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_NORMAL;
 	EquipItem(self,itmw_shortsword2);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART17,BODYTEX_N,itar_leather_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART17,BODYTEX_PLAYER_G2,itar_leather_l);
 	Mdl_SetModelFatness(self,-1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

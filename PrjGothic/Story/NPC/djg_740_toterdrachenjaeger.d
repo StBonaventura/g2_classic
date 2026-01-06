@@ -12,7 +12,7 @@ instance DJG_740_TOTERDRACHENJAEGER(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_sld_sword);
 	CreateInvItems(self,itmi_darkpearl,1);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART01,BODYTEX_N,itar_djg_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART01,BODYTEX_PLAYER_G2,itar_djg_l);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

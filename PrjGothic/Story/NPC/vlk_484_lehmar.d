@@ -13,7 +13,7 @@ instance VLK_484_LEHMAR(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_sld_sword);
 	b_createambientinv(self);
 	CreateInvItems(self,itwr_schuldenbuch,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_WHISTLER,BODYTEX_N,itar_vlk_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_WHISTLER,BODYTEX_PLAYER_G2,itar_vlk_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

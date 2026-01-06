@@ -12,7 +12,7 @@ instance VLK_462_THORBEN(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_bau_mace);
 	b_createambientinv(self);
 	CreateInvItems(self,itke_lockpick,12);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL04,BODYTEX_N,itar_vlk_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL04,BODYTEX_PLAYER_G2,itar_vlk_l);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

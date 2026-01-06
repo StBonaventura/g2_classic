@@ -13,7 +13,7 @@ instance VLK_441_GARVELL(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_vlk_axe);
 	b_createambientinv(self);
 	CreateInvItems(self,itse_goldpocket25,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_LEFTY,BODYTEX_N,itar_vlk_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_LEFTY,BODYTEX_PLAYER_G2,itar_vlk_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Tired.mds");
 	b_givenpctalents(self);

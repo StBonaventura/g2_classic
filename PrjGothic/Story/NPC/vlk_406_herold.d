@@ -11,7 +11,7 @@ instance VLK_406_HEROLD(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_1h_vlk_dagger);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL_SLY,BODYTEX_N,itar_governor);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL_SLY,BODYTEX_PLAYER_G2,itar_governor);
 	Mdl_SetModelFatness(self,1.5);
 	Mdl_ApplyOverlayMds(self,"Humans_Arrogance.mds");
 	b_givenpctalents(self);

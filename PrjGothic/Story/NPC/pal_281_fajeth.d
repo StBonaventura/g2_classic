@@ -12,7 +12,7 @@ instance PAL_281_FAJETH(NPC_DEFAULT)
 	EquipItem(self,itmw_2h_pal_sword);
 	EquipItem(self,itrw_mil_crossbow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_FINGERS,BODYTEX_N,itar_pal_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_FINGERS,BODYTEX_PLAYER_G2,itar_pal_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

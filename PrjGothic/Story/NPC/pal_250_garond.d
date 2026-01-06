@@ -14,9 +14,9 @@ instance PAL_250_GAROND(NPC_DEFAULT)
 	aivar[AIV_IGNORE_SHEEPKILLER] = TRUE;
 	b_setattributestochapter(self,4);
 	fight_tactic = FAI_HUMAN_MASTER;
-	EquipItem(self,itmw_2h_pal_sword);
+	EquipItem(self,ITMW_2H_BLESSED_02);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_RAVEN,BODYTEX_N,itar_pal_h);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_RAVEN,BODYTEX_PLAYER_G2,itar_pal_h);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Arrogance.mds");
 	b_givenpctalents(self);

@@ -18,7 +18,7 @@ instance PAL_2002_LEICHE(NPC_DEFAULT)
 	CreateInvItems(self,itpo_mana_02,2);
 	CreateInvItems(self,itmi_gold,100);
 	CreateInvItems(self,itpo_health_02,2);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL20,BODYTEX_N,itar_pal_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL20,BODYTEX_PLAYER_G2,itar_pal_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

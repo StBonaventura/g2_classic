@@ -13,7 +13,7 @@ instance BAU_940_AKIL(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_1h_bau_mace);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART_GRIM,BODYTEX_N,itar_bau_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART_GRIM,BODYTEX_PLAYER_G2,itar_bau_m);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

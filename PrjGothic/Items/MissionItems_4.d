@@ -96,13 +96,13 @@ instance ITRW_SENGRATHSARMBRUST_MIS(C_ITEM)
 	damagetotal = DAMAGE_MILARMBRUST;
 	damagetype = DAM_POINT;
 	munition = itrw_bolt;
-	cond_atr[2] = ATR_DEXTERITY;
+	cond_atr[2] = ATR_STRENGTH;
 	cond_value[2] = CONDITION_MILARMBRUST;
 	visual = "ItRw_Crossbow_Mission_02.mms";
 	description = name;
 	text[2] = NAME_DAMAGE;
 	count[2] = damagetotal;
-	text[3] = NAME_DEX_NEEDED;
+	text[3] = NAME_STR_NEEDED;
 	count[3] = cond_value[2];
 	text[5] = NAME_VALUE;
 	count[5] = value;

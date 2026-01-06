@@ -13,7 +13,7 @@ instance VLK_480_FELLAN(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_shortsword2);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL19,BODYTEX_N,itar_vlk_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL19,BODYTEX_PLAYER_G2,itar_vlk_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

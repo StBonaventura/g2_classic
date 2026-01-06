@@ -11,7 +11,7 @@ instance DJG_710_KJORN(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_MASTER;
 	EquipItem(self,itmw_1h_sld_sword);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMAL02,BODYTEX_N,itar_djg_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMAL02,BODYTEX_PLAYER_G2,itar_djg_l);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Arrogance.mds");
 	b_givenpctalents(self);

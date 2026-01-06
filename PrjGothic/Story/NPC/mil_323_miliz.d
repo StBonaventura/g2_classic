@@ -11,7 +11,7 @@ instance MIL_323_MILIZ(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_1h_mil_sword);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_BULLIT,BODYTEX_N,itar_mil_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_BULLIT,BODYTEX_PLAYER_G2,itar_mil_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

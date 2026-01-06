@@ -9,7 +9,7 @@ instance PAL_252_PARCIVAL(NPC_DEFAULT)
 	npctype = NPCTYPE_OCMAIN;
 	b_setattributestochapter(self,4);
 	fight_tactic = FAI_HUMAN_MASTER;
-	EquipItem(self,itmw_1h_pal_sword);
+	EquipItem(self,ITMW_1H_BLESSED_01);
 	b_createambientinv(self);
 	b_setnpcvisual(self,MALE,"Hum_Head_Pony",FACE_P_TOUGH_DRAGO,BODYTEX_P,itar_pal_h);
 	Mdl_SetModelFatness(self,0);

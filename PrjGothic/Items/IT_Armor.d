@@ -44,9 +44,9 @@ instance ITAR_GOVERNOR(C_ITEM)
 	name = "Изысканный дублет";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 40;
-	protection[PROT_BLUNT] = 40;
-	protection[PROT_POINT] = 40;
+	protection[PROT_EDGE] = 10;
+	protection[PROT_BLUNT] = 10;
+	protection[PROT_POINT] = 10;
 	protection[PROT_FIRE] = 0;
 	protection[PROT_MAGIC] = 0;
 	value = value_itar_governor;
@@ -73,9 +73,9 @@ instance ITAR_LARIUS(C_ITEM)
 	name = "Одежда губернатора";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 40;
-	protection[PROT_BLUNT] = 40;
-	protection[PROT_POINT] = 40;
+	protection[PROT_EDGE] = 10;
+	protection[PROT_BLUNT] = 10;
+	protection[PROT_POINT] = 10;
 	protection[PROT_FIRE] = 0;
 	protection[PROT_MAGIC] = 0;
 	value = value_itar_governor;
@@ -361,12 +361,12 @@ instance ITAR_VLKBABE_H(C_ITEM)
 
 instance ITAR_MIL_L(C_ITEM)
 {
-	name = "Легкие доспехи ополчения";
+	name = "Одежда ополчения";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 40;
-	protection[PROT_BLUNT] = 40;
-	protection[PROT_POINT] = 40;
+	protection[PROT_EDGE] = 30;
+	protection[PROT_BLUNT] = 30;
+	protection[PROT_POINT] = 30;
 	protection[PROT_FIRE] = 5;
 	protection[PROT_MAGIC] = 5;
 	value = value_itar_mil_l;
@@ -375,8 +375,6 @@ instance ITAR_MIL_L(C_ITEM)
 	visual_change = "Armor_Mil_L.asc";
 	visual_skin = 0;
 	material = MAT_LEATHER;
-	on_equip = Equip_ITAR_MIL;
-	on_unequip = UnEquip_ITAR_MIL;
 	description = name;
 	text[1] = NAME_PROT_EDGE;
 	count[1] = protection[PROT_EDGE];
@@ -392,7 +390,7 @@ instance ITAR_MIL_L(C_ITEM)
 
 instance ITAR_MIL_M(C_ITEM)
 {
-	name = "Тяжелые доспехи ополчения";
+	name = "Доспехи ополчения";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 60;
@@ -406,8 +404,6 @@ instance ITAR_MIL_M(C_ITEM)
 	visual_change = "Armor_MIL_M.asc";
 	visual_skin = 0;
 	material = MAT_LEATHER;
-	on_equip = Equip_ITAR_MIL;
-	on_unequip = UnEquip_ITAR_MIL;
 	description = name;
 	text[1] = NAME_PROT_EDGE;
 	count[1] = protection[PROT_EDGE];
@@ -421,32 +417,14 @@ instance ITAR_MIL_M(C_ITEM)
 	count[5] = value;
 };
 
-func void Equip_ITAR_MIL()
-{
-	if(Npc_IsPlayer(self))
-	{
-		Mdl_SetVisualBody(self,"hum_body_Naked0",BODYTEX_N,0,"Hum_Head_Pony",Face_N_Player,0,NO_ARMOR);
-		MILArmor_Equipped = TRUE;
-	};
-};
-
-func void UnEquip_ITAR_MIL()
-{
-	if(Npc_IsPlayer(self))
-	{
-		Mdl_SetVisualBody(self,"hum_body_Naked0",BODYTEX_PLAYER_G2,0,"Hum_Head_Pony",Face_N_Player,0,NO_ARMOR);
-		MILArmor_Equipped = FALSE;
-	};
-};
-
 instance ITAR_PAL_M(C_ITEM)
 {
 	name = "Доспехи рыцаря";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 80;
-	protection[PROT_BLUNT] = 80;
-	protection[PROT_POINT] = 80;
+	protection[PROT_EDGE] = 100;
+	protection[PROT_BLUNT] = 100;
+	protection[PROT_POINT] = 100;
 	protection[PROT_FIRE] = 25;
 	protection[PROT_MAGIC] = 25;
 	value = value_itar_pal_m;
@@ -473,9 +451,9 @@ instance ITAR_PAL_H(C_ITEM)
 	name = "Доспехи паладина";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 100;
-	protection[PROT_BLUNT] = 100;
-	protection[PROT_POINT] = 100;
+	protection[PROT_EDGE] = 150;
+	protection[PROT_BLUNT] = 150;
+	protection[PROT_POINT] = 150;
 	protection[PROT_FIRE] = 50;
 	protection[PROT_MAGIC] = 50;
 	value = value_itar_pal_h;
@@ -502,9 +480,9 @@ instance ITAR_BAU_L(C_ITEM)
 	name = "Рабочая одежда";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 15;
-	protection[PROT_BLUNT] = 15;
-	protection[PROT_POINT] = 15;
+	protection[PROT_EDGE] = 10;
+	protection[PROT_BLUNT] = 10;
+	protection[PROT_POINT] = 10;
 	protection[PROT_FIRE] = 0;
 	protection[PROT_MAGIC] = 0;
 	value = value_itar_bau_l;
@@ -513,8 +491,6 @@ instance ITAR_BAU_L(C_ITEM)
 	visual_change = "Armor_Bau_L.asc";
 	visual_skin = 0;
 	material = MAT_LEATHER;
-	on_equip = Equip_ITAR_BAU;
-	on_unequip = UnEquip_ITAR_BAU;
 	description = name;
 	text[1] = NAME_PROT_EDGE;
 	count[1] = protection[PROT_EDGE];
@@ -533,9 +509,9 @@ instance ITAR_BAU_M(C_ITEM)
 	name = "Крестьянский костюм";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 15;
-	protection[PROT_BLUNT] = 15;
-	protection[PROT_POINT] = 15;
+	protection[PROT_EDGE] = 10;
+	protection[PROT_BLUNT] = 10;
+	protection[PROT_POINT] = 10;
 	protection[PROT_FIRE] = 0;
 	protection[PROT_MAGIC] = 0;
 	value = value_itar_bau_m;
@@ -544,8 +520,6 @@ instance ITAR_BAU_M(C_ITEM)
 	visual_change = "Armor_Bau_M.asc";
 	visual_skin = 0;
 	material = MAT_LEATHER;
-	on_equip = Equip_ITAR_BAU;
-	on_unequip = UnEquip_ITAR_BAU;
 	description = name;
 	text[1] = NAME_PROT_EDGE;
 	count[1] = protection[PROT_EDGE];
@@ -557,24 +531,6 @@ instance ITAR_BAU_M(C_ITEM)
 	count[4] = protection[PROT_MAGIC];
 	text[5] = NAME_VALUE;
 	count[5] = value;
-};
-
-func void Equip_ITAR_BAU()
-{
-	if(Npc_IsPlayer(self))
-	{
-		Mdl_SetVisualBody(self,"hum_body_Naked0",BODYTEX_N,0,"Hum_Head_Pony",Face_N_Player,0,NO_ARMOR);
-		BAUArmor_Equipped = TRUE;
-	};
-};
-
-func void UnEquip_ITAR_BAU()
-{
-	if(Npc_IsPlayer(self))
-	{
-		Mdl_SetVisualBody(self,"hum_body_Naked0",BODYTEX_PLAYER_G2,0,"Hum_Head_Pony",Face_N_Player,0,NO_ARMOR);
-		BAUArmor_Equipped = FALSE;
-	};
 };
 
 instance ITAR_BAUBABE_L(C_ITEM)
@@ -640,9 +596,9 @@ instance ITAR_ONAR(C_ITEM)
 	name = "Одежда лендлорда";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 15;
-	protection[PROT_BLUNT] = 15;
-	protection[PROT_POINT] = 15;
+	protection[PROT_EDGE] = 10;
+	protection[PROT_BLUNT] = 10;
+	protection[PROT_POINT] = 10;
 	protection[PROT_FIRE] = 0;
 	protection[PROT_MAGIC] = 0;
 	value = value_itar_bau_m;
@@ -669,10 +625,10 @@ instance ITAR_SLD_L(C_ITEM)
 	name = "Легкие доспехи наемника";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 30;
-	protection[PROT_BLUNT] = 30;
-	protection[PROT_POINT] = 30;
-	protection[PROT_FIRE] = 0;
+	protection[PROT_EDGE] = 40;
+	protection[PROT_BLUNT] = 40;
+	protection[PROT_POINT] = 40;
+	protection[PROT_FIRE] = 20;
 	protection[PROT_MAGIC] = 0;
 	value = value_itar_sld_l;
 	wear = WEAR_TORSO;
@@ -680,8 +636,6 @@ instance ITAR_SLD_L(C_ITEM)
 	visual_change = "Armor_Sld_L.asc";
 	visual_skin = 0;
 	material = MAT_LEATHER;
-	on_equip = Equip_ITAR_SLD;
-	on_unequip = UnEquip_ITAR_SLD;
 	description = name;
 	text[1] = NAME_PROT_EDGE;
 	count[1] = protection[PROT_EDGE];
@@ -700,10 +654,10 @@ instance ITAR_SLD_M(C_ITEM)
 	name = "Средние доспехи наемника";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 45;
-	protection[PROT_BLUNT] = 45;
-	protection[PROT_POINT] = 45;
-	protection[PROT_FIRE] = 5;
+	protection[PROT_EDGE] = 55;
+	protection[PROT_BLUNT] = 55;
+	protection[PROT_POINT] = 55;
+	protection[PROT_FIRE] = 25;
 	protection[PROT_MAGIC] = 5;
 	value = value_itar_sld_m;
 	wear = WEAR_TORSO;
@@ -711,8 +665,6 @@ instance ITAR_SLD_M(C_ITEM)
 	visual_change = "Armor_Sld_M.asc";
 	visual_skin = 0;
 	material = MAT_LEATHER;
-	on_equip = Equip_ITAR_SLD;
-	on_unequip = UnEquip_ITAR_SLD;
 	description = name;
 	text[1] = NAME_PROT_EDGE;
 	count[1] = protection[PROT_EDGE];
@@ -731,10 +683,10 @@ instance ITAR_SLD_H(C_ITEM)
 	name = "Тяжелые доспехи наемника";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 60;
-	protection[PROT_BLUNT] = 60;
-	protection[PROT_POINT] = 60;
-	protection[PROT_FIRE] = 10;
+	protection[PROT_EDGE] = 70;
+	protection[PROT_BLUNT] = 70;
+	protection[PROT_POINT] = 70;
+	protection[PROT_FIRE] = 35;
 	protection[PROT_MAGIC] = 10;
 	value = value_itar_sld_h;
 	wear = WEAR_TORSO;
@@ -742,8 +694,6 @@ instance ITAR_SLD_H(C_ITEM)
 	visual_change = "Armor_Sld_H.asc";
 	visual_skin = 0;
 	material = MAT_LEATHER;
-	on_equip = Equip_ITAR_SLD;
-	on_unequip = UnEquip_ITAR_SLD;
 	description = name;
 	text[1] = NAME_PROT_EDGE;
 	count[1] = protection[PROT_EDGE];
@@ -757,33 +707,15 @@ instance ITAR_SLD_H(C_ITEM)
 	count[5] = value;
 };
 
-func void Equip_ITAR_SLD()
-{
-	if(Npc_IsPlayer(self))
-	{
-		Mdl_SetVisualBody(self,"hum_body_Naked0",BODYTEX_N,0,"Hum_Head_Pony",Face_N_Player,0,NO_ARMOR);
-		SLDArmor_Equipped = TRUE;
-	};
-};
-
-func void UnEquip_ITAR_SLD()
-{
-	if(Npc_IsPlayer(self))
-	{
-		Mdl_SetVisualBody(self,"hum_body_Naked0",BODYTEX_PLAYER_G2,0,"Hum_Head_Pony",Face_N_Player,0,NO_ARMOR);
-		SLDArmor_Equipped = FALSE;
-	};
-};
-
 instance ITAR_DJG_CRAWLER(C_ITEM)
 {
 	name = "Доспехи из панцирей краулеров";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 55;
-	protection[PROT_BLUNT] = 55;
-	protection[PROT_POINT] = 50;
-	protection[PROT_FIRE] = 20;
+	protection[PROT_EDGE] = 100;
+	protection[PROT_BLUNT] = 100;
+	protection[PROT_POINT] = 100;
+	protection[PROT_FIRE] = 30;
 	protection[PROT_MAGIC] = 15;
 	value = value_itar_djg_crawler;
 	wear = WEAR_TORSO;
@@ -812,7 +744,7 @@ instance ITAR_DJG_L(C_ITEM)
 	protection[PROT_EDGE] = 70;
 	protection[PROT_BLUNT] = 70;
 	protection[PROT_POINT] = 70;
-	protection[PROT_FIRE] = 40;
+	protection[PROT_FIRE] = 50;
 	protection[PROT_MAGIC] = 20;
 	value = value_itar_djg_l;
 	wear = WEAR_TORSO;
@@ -838,11 +770,11 @@ instance ITAR_DJG_M(C_ITEM)
 	name = "Средние доспехи охотника на драконов";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 80;
-	protection[PROT_BLUNT] = 80;
-	protection[PROT_POINT] = 80;
+	protection[PROT_EDGE] = 100;
+	protection[PROT_BLUNT] = 100;
+	protection[PROT_POINT] = 100;
 	protection[PROT_FIRE] = 50;
-	protection[PROT_MAGIC] = 30;
+	protection[PROT_MAGIC] = 35;
 	value = value_itar_djg_m;
 	wear = WEAR_TORSO;
 	visual = "ItAr_Djg_M.3ds";
@@ -867,11 +799,11 @@ instance ITAR_DJG_H(C_ITEM)
 	name = "Тяжелые доспехи охотника на драконов";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 90;
-	protection[PROT_BLUNT] = 90;
-	protection[PROT_POINT] = 90;
-	protection[PROT_FIRE] = 60;
-	protection[PROT_MAGIC] = 40;
+	protection[PROT_EDGE] = 100;
+	protection[PROT_BLUNT] = 100;
+	protection[PROT_POINT] = 100;
+	protection[PROT_FIRE] = 100;
+	protection[PROT_MAGIC] = 50;
 	value = value_itar_djg_h;
 	wear = WEAR_TORSO;
 	visual = "ItAr_Djg_H.3ds";
@@ -928,7 +860,7 @@ instance ITAR_NOV_L(C_ITEM)
 	protection[PROT_EDGE] = 25;
 	protection[PROT_BLUNT] = 25;
 	protection[PROT_POINT] = 25;
-	protection[PROT_FIRE] = 0;
+	protection[PROT_FIRE] = 10;
 	protection[PROT_MAGIC] = 10;
 	value = value_itar_nov_l;
 	wear = WEAR_TORSO;
@@ -936,8 +868,6 @@ instance ITAR_NOV_L(C_ITEM)
 	visual_change = "Armor_Nov_L.asc";
 	visual_skin = 0;
 	material = MAT_LEATHER;
-	on_equip = Equip_ITAR_NOV;
-	on_unequip = UnEquip_ITAR_NOV;
 	description = name;
 	text[1] = NAME_PROT_EDGE;
 	count[1] = protection[PROT_EDGE];
@@ -951,34 +881,16 @@ instance ITAR_NOV_L(C_ITEM)
 	count[5] = value;
 };
 
-func void Equip_ITAR_NOV()
-{
-	if(Npc_IsPlayer(self))
-	{
-		Mdl_SetVisualBody(self,"hum_body_Naked0",BODYTEX_N,0,"Hum_Head_Pony",Face_N_Player,0,NO_ARMOR);
-		NOVArmor_Equipped = TRUE;
-	};
-};
-
-func void UnEquip_ITAR_NOV()
-{
-	if(Npc_IsPlayer(self))
-	{
-		Mdl_SetVisualBody(self,"hum_body_Naked0",BODYTEX_PLAYER_G2,0,"Hum_Head_Pony",Face_N_Player,0,NO_ARMOR);
-		NOVArmor_Equipped = FALSE;
-	};
-};
-
 instance ITAR_KDF_L(C_ITEM)
 {
 	name = "Легкая мантия мага Огня";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 40;
-	protection[PROT_BLUNT] = 40;
-	protection[PROT_POINT] = 40;
-	protection[PROT_FIRE] = 20;
-	protection[PROT_MAGIC] = 20;
+	protection[PROT_EDGE] = 25;
+	protection[PROT_BLUNT] = 25;
+	protection[PROT_POINT] = 25;
+	protection[PROT_FIRE] = 50;
+	protection[PROT_MAGIC] = 50;
 	value = value_itar_kdf_l;
 	wear = WEAR_TORSO;
 	visual = "ItAr_KdF_L.3ds";
@@ -1003,11 +915,11 @@ instance ITAR_KDF_H(C_ITEM)
 	name = "Тяжелая мантия мага Огня";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 80;
-	protection[PROT_BLUNT] = 80;
-	protection[PROT_POINT] = 80;
-	protection[PROT_FIRE] = 40;
-	protection[PROT_MAGIC] = 40;
+	protection[PROT_EDGE] = 50;
+	protection[PROT_BLUNT] = 50;
+	protection[PROT_POINT] = 50;
+	protection[PROT_FIRE] = 100;
+	protection[PROT_MAGIC] = 100;
 	value = value_itar_kdf_h;
 	wear = WEAR_TORSO;
 	visual = "ItAr_KdF_H.3ds";
@@ -1032,9 +944,9 @@ instance ITAR_LEATHER_L(C_ITEM)
 	name = "Кожаные доспехи";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 25;
-	protection[PROT_BLUNT] = 25;
-	protection[PROT_POINT] = 20;
+	protection[PROT_EDGE] = 30;
+	protection[PROT_BLUNT] = 30;
+	protection[PROT_POINT] = 30;
 	protection[PROT_FIRE] = 5;
 	protection[PROT_MAGIC] = 0;
 	value = value_itar_leather_l;
@@ -1058,12 +970,12 @@ instance ITAR_LEATHER_L(C_ITEM)
 
 instance ITAR_BDT_M(C_ITEM)
 {
-	name = "Средние доспехи бандита";
+	name = "Легкая одежда бандита";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 35;
-	protection[PROT_BLUNT] = 35;
-	protection[PROT_POINT] = 35;
+	protection[PROT_EDGE] = 30;
+	protection[PROT_BLUNT] = 30;
+	protection[PROT_POINT] = 30;
 	protection[PROT_FIRE] = 0;
 	protection[PROT_MAGIC] = 0;
 	value = value_itar_bdt_m;
@@ -1087,12 +999,12 @@ instance ITAR_BDT_M(C_ITEM)
 
 instance ITAR_BDT_H(C_ITEM)
 {
-	name = "Тяжелые доспехи бандита";
+	name = "Одежда бандита";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 45;
-	protection[PROT_BLUNT] = 45;
-	protection[PROT_POINT] = 45;
+	protection[PROT_EDGE] = 35;
+	protection[PROT_BLUNT] = 35;
+	protection[PROT_POINT] = 35;
 	protection[PROT_FIRE] = 0;
 	protection[PROT_MAGIC] = 0;
 	value = value_itar_bdt_h;
@@ -1119,11 +1031,11 @@ instance ITAR_XARDAS(C_ITEM)
 	name = "Мантия некроманта";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 100;
-	protection[PROT_BLUNT] = 100;
-	protection[PROT_POINT] = 100;
-	protection[PROT_FIRE] = 50;
-	protection[PROT_MAGIC] = 50;
+	protection[PROT_EDGE] = 50;
+	protection[PROT_BLUNT] = 50;
+	protection[PROT_POINT] = 50;
+	protection[PROT_FIRE] = 100;
+	protection[PROT_MAGIC] = 100;
 	value = value_itar_xardas;
 	wear = WEAR_TORSO;
 	visual = "ItAr_Xardas.3ds";
@@ -1237,9 +1149,9 @@ instance ITAR_DEMENTOR(C_ITEM)
 	flags = 0;
 	protection[PROT_EDGE] = 15;
 	protection[PROT_BLUNT] = 15;
-	protection[PROT_POINT] = 40;
-	protection[PROT_FIRE] = 15;
-	protection[PROT_MAGIC] = 15;
+	protection[PROT_POINT] = 15;
+	protection[PROT_FIRE] = 40;
+	protection[PROT_MAGIC] = 40;
 	value = value_itar_dementor;
 	wear = WEAR_TORSO;
 	visual = "ItAr_Xardas.3ds";
@@ -1264,11 +1176,11 @@ instance ITAR_BLACKMAGE(C_ITEM)
 	name = "Мантия черного мага";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 100;
-	protection[PROT_BLUNT] = 100;
-	protection[PROT_POINT] = 100;
-	protection[PROT_FIRE] = 50;
-	protection[PROT_MAGIC] = 50;
+	protection[PROT_EDGE] = 50;
+	protection[PROT_BLUNT] = 50;
+	protection[PROT_POINT] = 50;
+	protection[PROT_FIRE] = 100;
+	protection[PROT_MAGIC] = 100;
 	value = value_itar_xardas;
 	wear = WEAR_TORSO;
 	visual = "ItAr_Xardas.3ds";
@@ -1293,11 +1205,11 @@ instance ITAR_KDW_H(C_ITEM)
 	name = "Тяжелая мантия мага Воды";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 80;
-	protection[PROT_BLUNT] = 80;
-	protection[PROT_POINT] = 80;
-	protection[PROT_FIRE] = 40;
-	protection[PROT_MAGIC] = 40;
+	protection[PROT_EDGE] = 50;
+	protection[PROT_BLUNT] = 50;
+	protection[PROT_POINT] = 50;
+	protection[PROT_FIRE] = 100;
+	protection[PROT_MAGIC] = 100;
 	value = value_itar_kdw_h;
 	wear = WEAR_TORSO;
 	visual = "ItAr_KdW_H.3ds";
@@ -1322,9 +1234,9 @@ instance ITAR_PRISONER(C_ITEM)
 	name = "Одежда каторжника";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
-	protection[PROT_EDGE] = 20;
-	protection[PROT_BLUNT] = 20;
-	protection[PROT_POINT] = 20;
+	protection[PROT_EDGE] = 10;
+	protection[PROT_BLUNT] = 10;
+	protection[PROT_POINT] = 10;
 	protection[PROT_FIRE] = 0;
 	protection[PROT_MAGIC] = 0;
 	value = value_itar_prisoner;

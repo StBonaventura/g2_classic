@@ -12,7 +12,7 @@ instance MIL_321_RANGAR(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_mil_sword);
 	CreateInvItems(self,itke_city_tower_02,1);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_TOUGH_SKIP,BODYTEX_N,itar_mil_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_TOUGH_SKIP,BODYTEX_PLAYER_G2,itar_mil_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

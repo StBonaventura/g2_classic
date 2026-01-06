@@ -10,7 +10,7 @@ instance VLK_407_HAKON(NPC_DEFAULT)
 	b_setattributestochapter(self,4);
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_shortsword2);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART20,BODYTEX_N,itar_vlk_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART20,BODYTEX_PLAYER_G2,itar_vlk_m);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

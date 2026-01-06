@@ -11,7 +11,7 @@ instance VLK_402_RICHTER(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_NORMAL;
 	b_createambientinv(self);
 	CreateInvItems(self,itke_richter,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_RICHTER,BODYTEX_N,itar_judge);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_RICHTER,BODYTEX_PLAYER_G2,itar_judge);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

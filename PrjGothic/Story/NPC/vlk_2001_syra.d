@@ -11,7 +11,7 @@ instance VLK_2001_SYRA(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	b_createambientinv(self);
 	CreateInvItems(self,itpo_health_02,1);
-	b_setnpcvisual(self,FEMALE,"Hum_Head_Babe",FACEBABE_N_PINKHAIR,BODYTEX_N,NO_ARMOR);
+	b_setnpcvisual(self,FEMALE,"Hum_Head_Babe",FACEBABE_N_PINKHAIR,BODYTEX_PLAYER_G2,NO_ARMOR);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Babe.mds");
 	b_givenpctalents(self);

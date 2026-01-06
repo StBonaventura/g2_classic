@@ -11,7 +11,7 @@ instance VLK_4102_WAFFENKNECHT(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_1h_mil_sword);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMAL_SPASSVOGEL,BODYTEX_N,itar_mil_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMAL_SPASSVOGEL,BODYTEX_PLAYER_G2,itar_mil_l);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

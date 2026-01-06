@@ -11,7 +11,7 @@ instance PAL_205_TORWACHE(NPC_DEFAULT)
 	aivar[AIV_NEWSOVERRIDE] = TRUE;
 	fight_tactic = FAI_HUMAN_MASTER;
 	EquipItem(self,itmw_1h_pal_sword);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_WEAK05,BODYTEX_N,itar_pal_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_WEAK05,BODYTEX_PLAYER_G2,itar_pal_m);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

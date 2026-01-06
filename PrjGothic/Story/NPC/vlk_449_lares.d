@@ -14,7 +14,7 @@ instance VLK_449_LARES(NPC_DEFAULT)
 	CreateInvItems(self,itmi_gold,100);
 	CreateInvItems(self,itmi_oldcoin,1);
 	CreateInvItems(self,itpo_health_02,5);
-	b_setnpcvisual(self,MALE,"Hum_Head_Thief",FACE_N_LARES,BODYTEX_N,itar_vlk_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Thief",FACE_N_LARES,BODYTEX_PLAYER_G2,itar_vlk_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

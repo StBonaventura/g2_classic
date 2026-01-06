@@ -13,7 +13,7 @@ instance SLD_816_FESTER(NPC_DEFAULT)
 	EquipItem(self,itrw_sld_bow);
 	CreateInvItems(self,itrw_arrow,10);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART05,BODYTEX_N,itar_sld_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART05,BODYTEX_PLAYER_G2,itar_sld_l);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

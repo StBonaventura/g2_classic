@@ -9,10 +9,10 @@ instance PAL_251_ORIC(NPC_DEFAULT)
 	npctype = NPCTYPE_OCMAIN;
 	b_setattributestochapter(self,5);
 	fight_tactic = FAI_HUMAN_MASTER;
-	EquipItem(self,itmw_2h_pal_sword);
+	EquipItem(self,ITMW_2H_BLESSED_01);
 	EquipItem(self,itrw_mil_crossbow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_TOUGH_LEE,BODYTEX_N,itar_pal_h);
+	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_TOUGH_LEE,BODYTEX_PLAYER_G2,itar_pal_h);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

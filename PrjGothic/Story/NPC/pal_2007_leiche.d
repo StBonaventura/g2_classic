@@ -15,7 +15,7 @@ instance PAL_2007_LEICHE(NPC_DEFAULT)
 	attribute[ATR_HITPOINTS] = 1;
 	fight_tactic = FAI_HUMAN_MASTER;
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART_SWINEY,BODYTEX_N,itar_pal_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART_SWINEY,BODYTEX_PLAYER_G2,itar_pal_m);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

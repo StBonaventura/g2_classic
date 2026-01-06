@@ -13,7 +13,7 @@ instance VLK_458_RUPERT(NPC_DEFAULT)
 	CreateInvItems(self,itfo_apple,12);
 	CreateInvItems(self,itfo_bread,5);
 	CreateInvItems(self,itfo_milk,5);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL20,BODYTEX_N,itar_vlk_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL20,BODYTEX_PLAYER_G2,itar_vlk_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Tired.mds");
 	b_givenpctalents(self);

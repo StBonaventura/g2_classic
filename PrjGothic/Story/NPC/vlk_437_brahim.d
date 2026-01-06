@@ -10,7 +10,7 @@ instance VLK_437_BRAHIM(NPC_DEFAULT)
 	aivar[AIV_TOUGHGUY] = TRUE;
 	b_setattributestochapter(self,3);
 	fight_tactic = FAI_HUMAN_STRONG;
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_COOLPOCK,BODYTEX_N,itar_vlk_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_COOLPOCK,BODYTEX_PLAYER_G2,itar_vlk_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

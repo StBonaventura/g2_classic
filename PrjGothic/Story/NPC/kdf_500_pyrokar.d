@@ -9,7 +9,7 @@ instance KDF_500_PYROKAR(NPC_DEFAULT)
 	npctype = NPCTYPE_MAIN;
 	b_setattributestochapter(self,6);
 	fight_tactic = FAI_HUMAN_STRONG;
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_IMPORTANTOLD,BODYTEX_N,itar_kdf_h);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_IMPORTANTOLD,BODYTEX_PLAYER_G2,itar_kdf_h);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Mage.mds");
 	b_givenpctalents(self);

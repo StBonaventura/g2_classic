@@ -1,7 +1,7 @@
 
 instance PAL_2004_BRUDER(NPC_DEFAULT)
 {
-	name[0] = NAME_PALADIN;
+	name[0] = NAME_RITTER;
 	guild = GIL_NONE;
 	id = 2004;
 	voice = 4;
@@ -16,7 +16,7 @@ instance PAL_2004_BRUDER(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_STRONG;
 	b_createambientinv(self);
 	CreateInvItems(self,itru_pallight,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL02,BODYTEX_N,itar_pal_h);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMAL02,BODYTEX_PLAYER_G2,itar_pal_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

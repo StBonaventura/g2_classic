@@ -10,7 +10,7 @@ instance VLK_411_GAERTNER(NPC_DEFAULT)
 	b_setattributestochapter(self,1);
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_1h_bau_axe);
-	b_setnpcvisual(self,MALE,"Hum_Head_Psionic",FACE_N_NORMALBART_GRAHAM,BODYTEX_N,itar_bau_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Psionic",FACE_N_NORMALBART_GRAHAM,BODYTEX_PLAYER_G2,itar_bau_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

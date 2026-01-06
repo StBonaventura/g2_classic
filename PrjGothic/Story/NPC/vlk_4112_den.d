@@ -20,7 +20,7 @@ instance VLK_4112_DEN(NPC_DEFAULT)
 	CreateInvItems(self,itmi_goldring,1);
 	CreateInvItems(self,itmi_silvercandleholder,1);
 	CreateInvItems(self,itmi_goldnecklace,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART_GRIM,BODYTEX_N,itar_mil_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART_GRIM,BODYTEX_PLAYER_G2,itar_mil_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

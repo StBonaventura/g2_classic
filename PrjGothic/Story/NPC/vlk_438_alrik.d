@@ -16,7 +16,7 @@ instance VLK_438_ALRIK(NPC_DEFAULT)
 	b_setattributestochapter(self,2);
 	fight_tactic = FAI_HUMAN_NORMAL;
 	EquipItem(self,itmw_1h_bau_mace);
-	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_BLOODWYN,BODYTEX_N,itar_vlk_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_BLOODWYN,BODYTEX_PLAYER_G2,itar_vlk_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

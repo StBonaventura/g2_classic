@@ -12,7 +12,7 @@ instance NOV_601_IGARAZ(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_nov_mace);
 	b_createambientinv(self);
 	CreateInvItems(self,itke_igarazchest_mis,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_Psionic",FACE_N_NORMAL_STONE,BODYTEX_N,itar_nov_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Psionic",FACE_N_NORMAL_STONE,BODYTEX_PLAYER_G2,itar_nov_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Mage.mds");
 	b_givenpctalents(self);

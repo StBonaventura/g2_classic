@@ -11,7 +11,7 @@ instance VLK_469_HALVOR(NPC_DEFAULT)
 	b_setattributestochapter(self,2);
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_1h_mace_l_03);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART11,BODYTEX_N,itar_vlk_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART11,BODYTEX_PLAYER_G2,itar_vlk_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Arrogance.mds");
 	b_givenpctalents(self);

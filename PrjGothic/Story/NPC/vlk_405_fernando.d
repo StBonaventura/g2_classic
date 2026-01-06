@@ -12,7 +12,7 @@ instance VLK_405_FERNANDO(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_vlk_mace);
 	b_createambientinv(self);
 	CreateInvItems(self,itse_goldpocket100,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_CORRISTO,BODYTEX_N,itar_governor);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_CORRISTO,BODYTEX_PLAYER_G2,itar_governor);
 	Mdl_SetModelFatness(self,3);
 	Mdl_ApplyOverlayMds(self,"Humans_Arrogance.mds");
 	b_givenpctalents(self);

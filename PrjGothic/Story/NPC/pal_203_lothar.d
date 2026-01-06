@@ -9,7 +9,7 @@ instance PAL_203_LOTHAR(NPC_DEFAULT)
 	npctype = NPCTYPE_MAIN;
 	b_setattributestochapter(self,5);
 	fight_tactic = FAI_HUMAN_MASTER;
-	EquipItem(self,itmw_1h_pal_sword);
+	EquipItem(self,ITMW_1H_BLESSED_02);
 	b_createambientinv(self);
 	b_setnpcvisual(self,MALE,"Hum_Head_Psionic",FACE_P_NORMALBART_NEFARIUS,BODYTEX_P,itar_pal_h);
 	Mdl_SetModelFatness(self,1);

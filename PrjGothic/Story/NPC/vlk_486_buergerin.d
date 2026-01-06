@@ -11,7 +11,7 @@ instance VLK_486_BUERGERIN(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	b_createambientinv(self);
 	EquipItem(self,itmw_1h_vlk_dagger);
-	b_setnpcvisual(self,FEMALE,"Hum_Head_Babe8",FACEBABE_N_LILO,BODYTEX_N,itar_vlkbabe_m);
+	b_setnpcvisual(self,FEMALE,"Hum_Head_Babe8",FACEBABE_N_LILO,BODYTEX_PLAYER_G2,itar_vlkbabe_m);
 	Mdl_ApplyOverlayMds(self,"Humans_Babe.mds");
 	b_givenpctalents(self);
 	b_setfightskills(self,35);

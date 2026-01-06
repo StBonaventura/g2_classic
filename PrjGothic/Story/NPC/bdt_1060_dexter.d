@@ -13,7 +13,7 @@ instance BDT_1060_DEXTER(NPC_DEFAULT)
 	EquipItem(self,itmw_shortsword2);
 	b_createambientinv(self);
 	CreateInvItems(self,itke_dexter,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART_DEXTER,BODYTEX_N,itar_diego);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART_DEXTER,BODYTEX_PLAYER_G2,itar_diego);
 	Mdl_SetModelFatness(self,-1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

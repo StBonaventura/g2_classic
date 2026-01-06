@@ -9,9 +9,9 @@ instance PAL_220_SCHIFFSWACHE(NPC_DEFAULT)
 	npctype = NPCTYPE_MAIN;
 	b_setattributestochapter(self,5);
 	fight_tactic = FAI_HUMAN_MASTER;
-	EquipItem(self,itmw_1h_pal_sword);
+	EquipItem(self,ITMW_1H_BLESSED_01);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_NORMALBART05,BODYTEX_N,itar_pal_h);
+	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_N_NORMALBART05,BODYTEX_PLAYER_G2,itar_pal_h);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);
