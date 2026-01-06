@@ -12,7 +12,7 @@ instance BDT_1030_MORGAHARD(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_sld_sword);
 	b_createambientinv(self);
 	CreateInvItems(self,itwr_richterkomprobrief_mis,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_BARTHOLO,BODYTEX_PLAYER_G2,itar_bdt_h);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_BARTHOLO,BODYTEX_PLAYER_G2,itar_sld_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);

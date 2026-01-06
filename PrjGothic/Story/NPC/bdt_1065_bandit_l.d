@@ -12,7 +12,7 @@ instance BDT_1065_BANDIT_L(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,itmw_1h_bau_mace);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_TOUGHBART01,BODYTEX_PLAYER_G2,itar_bdt_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_TOUGHBART01,BODYTEX_PLAYER_G2,itar_bdt_h);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

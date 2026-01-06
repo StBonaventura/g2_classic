@@ -12,7 +12,7 @@ instance BDT_1016_BANDIT_M(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_vlk_axe);
 	EquipItem(self,itrw_sld_bow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_B_TOUGH_PACHO,BODYTEX_B,itar_bdt_m);
+	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_B_TOUGH_PACHO,BODYTEX_B,itar_bdt_h);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

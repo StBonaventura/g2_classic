@@ -13,7 +13,7 @@ instance BDT_1014_BANDIT_L(NPC_DEFAULT)
 	EquipItem(self,itmw_nagelknueppel);
 	b_createambientinv(self);
 	CreateInvItems(self,itke_bandit,1);
-	b_setnpcvisual(self,MALE,"Hum_Head_Psionic",FACE_N_MUD,BODYTEX_PLAYER_G2,itar_leather_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Psionic",FACE_N_MUD,BODYTEX_PLAYER_G2,itar_bdt_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

@@ -12,7 +12,7 @@ instance BDT_1051_WEGELAGERER(NPC_DEFAULT)
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_1h_sld_sword);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMAL06,BODYTEX_PLAYER_G2,itar_bdt_h);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMAL06,BODYTEX_PLAYER_G2,itar_sld_l);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

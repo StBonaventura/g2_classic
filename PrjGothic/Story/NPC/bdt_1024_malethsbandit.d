@@ -12,7 +12,7 @@ instance BDT_1024_MALETHSBANDIT(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_sld_axe);
 	EquipItem(self,itrw_mil_crossbow);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_P_TOUGHBALD_NEK,BODYTEX_P,itar_bdt_h);
+	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_P_TOUGHBALD_NEK,BODYTEX_P,itar_sld_l);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);

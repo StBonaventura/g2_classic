@@ -12,7 +12,7 @@ instance BDT_1033_FLUECHTLING(NPC_DEFAULT)
 	EquipItem(self,itmw_1h_sld_sword);
 	CreateInvItems(self,itwr_morgahardtip,1);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART_GRAHAM,BODYTEX_PLAYER_G2,itar_leather_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART_GRAHAM,BODYTEX_PLAYER_G2,itar_bdt_m);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	b_givenpctalents(self);
