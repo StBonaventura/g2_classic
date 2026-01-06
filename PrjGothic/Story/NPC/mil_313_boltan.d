@@ -9,7 +9,7 @@ instance MIL_313_BOLTAN(NPC_DEFAULT)
 	npctype = NPCTYPE_AMBIENT;
 	b_setattributestochapter(self,3);
 	fight_tactic = FAI_HUMAN_STRONG;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,itmw_shortsword1);
 	b_createambientinv(self);
 	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_B_NORMAL01,BODYTEX_B,itar_mil_l);
 	Mdl_SetModelFatness(self,0);

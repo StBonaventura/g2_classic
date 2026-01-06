@@ -10,7 +10,7 @@ instance MIL_325_MILIZ(NPC_DEFAULT)
 	aivar[AIV_NEWSOVERRIDE] = TRUE;
 	b_setattributestochapter(self,3);
 	fight_tactic = FAI_HUMAN_STRONG;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,itmw_shortsword1);
 	b_createambientinv(self);
 	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_B_TOUGH_SILAS,BODYTEX_B,itar_mil_l);
 	Mdl_SetModelFatness(self,1);

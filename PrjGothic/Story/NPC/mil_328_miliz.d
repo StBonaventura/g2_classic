@@ -11,7 +11,7 @@ instance MIL_328_MILIZ(NPC_DEFAULT)
 	aivar[AIV_TOUGHGUY] = TRUE;
 	b_setattributestochapter(self,2);
 	fight_tactic = FAI_HUMAN_STRONG;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,itmw_shortsword1);
 	CreateInvItems(self,itke_storage,1);
 	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART17,BODYTEX_PLAYER_G2,itar_leather_l);
 	Mdl_SetModelFatness(self,0);

@@ -10,7 +10,7 @@ instance MIL_310_STADTWACHE(NPC_DEFAULT)
 	aivar[AIV_NEWSOVERRIDE] = TRUE;
 	b_setattributestochapter(self,6);
 	fight_tactic = FAI_HUMAN_MASTER;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,itmw_shortsword1);
 	b_createambientinv(self);
 	b_setnpcvisual(self,MALE,"Hum_Head_Psionic",FACE_N_RAVEN,BODYTEX_PLAYER_G2,itar_mil_l);
 	Mdl_SetModelFatness(self,1);

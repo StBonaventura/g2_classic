@@ -9,7 +9,7 @@ instance MIL_317_RUGA(NPC_DEFAULT)
 	npctype = NPCTYPE_MAIN;
 	b_setattributestochapter(self,2);
 	fight_tactic = FAI_HUMAN_COWARD;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,itmw_shortsword1);
 	EquipItem(self,itrw_mil_crossbow);
 	b_createambientinv(self);
 	CreateInvItems(self,itke_city_tower_03,1);

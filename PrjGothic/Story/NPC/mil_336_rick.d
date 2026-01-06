@@ -10,7 +10,7 @@ instance MIL_336_RICK(NPC_DEFAULT)
 	aivar[AIV_DROPDEADANDKILL] = TRUE;
 	b_setattributestochapter(self,1);
 	fight_tactic = FAI_HUMAN_COWARD;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,itmw_shortsword1);
 	b_createambientinv(self);
 	b_setnpcvisual(self,MALE,"Hum_Head_Fatbald",FACE_N_RICELORD,BODYTEX_PLAYER_G2,itar_mil_l);
 	Mdl_SetModelFatness(self,0);

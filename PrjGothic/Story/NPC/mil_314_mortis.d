@@ -9,7 +9,7 @@ instance MIL_314_MORTIS(NPC_DEFAULT)
 	npctype = NPCTYPE_MAIN;
 	b_setattributestochapter(self,3);
 	fight_tactic = FAI_HUMAN_STRONG;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,itmw_shortsword1);
 	b_createambientinv(self);
 	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_P_NORMAL01,BODYTEX_P,itar_smith);
 	Mdl_SetModelFatness(self,0);

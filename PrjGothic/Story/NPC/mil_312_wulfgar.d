@@ -7,7 +7,7 @@ instance MIL_312_WULFGAR(NPC_DEFAULT)
 	voice = 4;
 	flags = 0;
 	npctype = NPCTYPE_MAIN;
-	b_setattributestochapter(self,3);
+	b_setattributestochapter(self,6);
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_1h_mil_sword);
 	b_createambientinv(self);

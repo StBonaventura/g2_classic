@@ -9,7 +9,7 @@ instance MIL_316_WAMBO(NPC_DEFAULT)
 	npctype = NPCTYPE_MAIN;
 	b_setattributestochapter(self,2);
 	fight_tactic = FAI_HUMAN_STRONG;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,itmw_shortsword1);
 	b_createambientinv(self);
 	CreateInvItems(self,itke_city_tower_04,1);
 	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART16,BODYTEX_PLAYER_G2,itar_mil_m);

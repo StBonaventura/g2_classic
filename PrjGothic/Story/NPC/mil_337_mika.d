@@ -7,16 +7,16 @@ instance MIL_337_MIKA(NPC_DEFAULT)
 	voice = 12;
 	flags = 0;
 	npctype = NPCTYPE_MAIN;
-	b_setattributestochapter(self,1);
+	b_setattributestochapter(self,5);
 	fight_tactic = FAI_HUMAN_STRONG;
 	EquipItem(self,itmw_1h_mil_sword);
 	CreateInvItems(self,itpo_health_01,4);
 	b_createambientinv(self);
-	b_setnpcvisual(self,MALE,"Hum_Head_Fatbald",FACE_L_TOUGHBART_QUENTIN,BODYTEX_L,itar_mil_l);
+	b_setnpcvisual(self,MALE,"Hum_Head_Fatbald",FACE_L_TOUGHBART_QUENTIN,BODYTEX_L,itar_mil_m);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	b_givenpctalents(self);
-	b_setfightskills(self,30);
+	b_setfightskills(self,50);
 	daily_routine = rtn_start_337;
 };
 

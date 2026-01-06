@@ -9,7 +9,7 @@ instance MIL_319_PABLO(NPC_DEFAULT)
 	npctype = NPCTYPE_MAIN;
 	b_setattributestochapter(self,3);
 	fight_tactic = FAI_HUMAN_STRONG;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,itmw_shortsword1);
 	b_createambientinv(self);
 	CreateInvItems(self,itke_city_tower_01,1);
 	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_NORMALBART_DUSTY,BODYTEX_PLAYER_G2,itar_mil_l);

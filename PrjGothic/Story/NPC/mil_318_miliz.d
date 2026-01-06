@@ -9,7 +9,7 @@ instance MIL_318_MILIZ(NPC_DEFAULT)
 	npctype = NPCTYPE_AMBIENT;
 	b_setattributestochapter(self,3);
 	fight_tactic = FAI_HUMAN_STRONG;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,itmw_shortsword1);
 	b_createambientinv(self);
 	b_setnpcvisual(self,MALE,"Hum_Head_Bald",FACE_N_NORMALBART16,BODYTEX_PLAYER_G2,itar_mil_l);
 	Mdl_SetModelFatness(self,0);

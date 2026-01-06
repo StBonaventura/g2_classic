@@ -9,7 +9,7 @@ instance MIL_306_TUERWACHE(NPC_DEFAULT)
 	npctype = NPCTYPE_AMBIENT;
 	b_setattributestochapter(self,3);
 	fight_tactic = FAI_HUMAN_STRONG;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,itmw_shortsword1);
 	b_createambientinv(self);
 	b_setnpcvisual(self,MALE,"Hum_Head_Fighter",FACE_L_TOUGHBALD01,BODYTEX_L,itar_mil_m);
 	Mdl_SetModelFatness(self,1);

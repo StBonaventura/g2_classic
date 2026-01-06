@@ -9,7 +9,7 @@ instance MIL_309_STADTWACHE(NPC_DEFAULT)
 	npctype = NPCTYPE_MAIN;
 	b_setattributestochapter(self,6);
 	fight_tactic = FAI_HUMAN_STRONG;
-	EquipItem(self,itmw_1h_mil_sword);
+	EquipItem(self,itmw_shortsword1);
 	b_createambientinv(self);
 	b_setnpcvisual(self,MALE,"Hum_Head_FatBald",FACE_N_WEAK_HEREK,BODYTEX_PLAYER_G2,itar_mil_l);
 	Mdl_SetModelFatness(self,1);
